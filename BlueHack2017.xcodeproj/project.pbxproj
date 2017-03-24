@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC8EF1151E8544D700767B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1141E8544D700767B42 /* AppDelegate.swift */; };
+		BC8EF1171E8544D700767B42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1161E8544D700767B42 /* ViewController.swift */; };
+		BC8EF11A1E8544D700767B42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8EF1181E8544D700767B42 /* Main.storyboard */; };
+		BC8EF11C1E8544D700767B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8EF11B1E8544D700767B42 /* Assets.xcassets */; };
+		BC8EF11F1E8544D700767B42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8EF11D1E8544D700767B42 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BC8EF1111E8544D700767B42 /* BlueHack2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueHack2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8EF1141E8544D700767B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC8EF1161E8544D700767B42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC8EF1191E8544D700767B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC8EF11B1E8544D700767B42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC8EF11E1E8544D700767B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC8EF1201E8544D700767B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC8EF10E1E8544D700767B42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC8EF1081E8544D700767B42 = {
+			isa = PBXGroup;
+			children = (
+				BC8EF1131E8544D700767B42 /* BlueHack2017 */,
+				BC8EF1121E8544D700767B42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC8EF1121E8544D700767B42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC8EF1111E8544D700767B42 /* BlueHack2017.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC8EF1131E8544D700767B42 /* BlueHack2017 */ = {
+			isa = PBXGroup;
+			children = (
+				BC8EF1141E8544D700767B42 /* AppDelegate.swift */,
+				BC8EF1161E8544D700767B42 /* ViewController.swift */,
+				BC8EF1181E8544D700767B42 /* Main.storyboard */,
+				BC8EF11B1E8544D700767B42 /* Assets.xcassets */,
+				BC8EF11D1E8544D700767B42 /* LaunchScreen.storyboard */,
+				BC8EF1201E8544D700767B42 /* Info.plist */,
+			);
+			path = BlueHack2017;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC8EF1101E8544D700767B42 /* BlueHack2017 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8EF1231E8544D700767B42 /* Build configuration list for PBXNativeTarget "BlueHack2017" */;
+			buildPhases = (
+				BC8EF10D1E8544D700767B42 /* Sources */,
+				BC8EF10E1E8544D700767B42 /* Frameworks */,
+				BC8EF10F1E8544D700767B42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueHack2017;
+			productName = BlueHack2017;
+			productReference = BC8EF1111E8544D700767B42 /* BlueHack2017.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC8EF1091E8544D700767B42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Carlos Doki";
+				TargetAttributes = {
+					BC8EF1101E8544D700767B42 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7984M9FF87;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BC8EF10C1E8544D700767B42 /* Build configuration list for PBXProject "BlueHack2017" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC8EF1081E8544D700767B42;
+			productRefGroup = BC8EF1121E8544D700767B42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC8EF1101E8544D700767B42 /* BlueHack2017 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC8EF10F1E8544D700767B42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8EF11F1E8544D700767B42 /* LaunchScreen.storyboard in Resources */,
+				BC8EF11C1E8544D700767B42 /* Assets.xcassets in Resources */,
+				BC8EF11A1E8544D700767B42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC8EF10D1E8544D700767B42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8EF1171E8544D700767B42 /* ViewController.swift in Sources */,
+				BC8EF1151E8544D700767B42 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC8EF1181E8544D700767B42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC8EF1191E8544D700767B42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC8EF11D1E8544D700767B42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC8EF11E1E8544D700767B42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC8EF1211E8544D700767B42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC8EF1221E8544D700767B42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC8EF1241E8544D700767B42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7984M9FF87;
+				INFOPLIST_FILE = BlueHack2017/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosdoki.BlueHack2017;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BC8EF1251E8544D700767B42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7984M9FF87;
+				INFOPLIST_FILE = BlueHack2017/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosdoki.BlueHack2017;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC8EF10C1E8544D700767B42 /* Build configuration list for PBXProject "BlueHack2017" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8EF1211E8544D700767B42 /* Debug */,
+				BC8EF1221E8544D700767B42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8EF1231E8544D700767B42 /* Build configuration list for PBXNativeTarget "BlueHack2017" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8EF1241E8544D700767B42 /* Debug */,
+				BC8EF1251E8544D700767B42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC8EF1091E8544D700767B42 /* Project object */;
+}
