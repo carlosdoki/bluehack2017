@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BC8EF1101E8544D700767B42"
-               BuildableName = "BlueHack2017.app"
-               BlueprintName = "BlueHack2017"
-               ReferencedContainer = "container:BlueHack2017.xcodeproj">
+               BlueprintIdentifier = "9CA0830E05B366E6DFC25EB8742BAA68"
+               BuildableName = "Pods_BlueHack2017.framework"
+               BlueprintName = "Pods-BlueHack2017"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BC8EF1101E8544D700767B42"
-            BuildableName = "BlueHack2017.app"
-            BlueprintName = "BlueHack2017"
-            ReferencedContainer = "container:BlueHack2017.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BC8EF1101E8544D700767B42"
-            BuildableName = "BlueHack2017.app"
-            BlueprintName = "BlueHack2017"
-            ReferencedContainer = "container:BlueHack2017.xcodeproj">
+            BlueprintIdentifier = "9CA0830E05B366E6DFC25EB8742BAA68"
+            BuildableName = "Pods_BlueHack2017.framework"
+            BlueprintName = "Pods-BlueHack2017"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BC8EF1101E8544D700767B42"
-            BuildableName = "BlueHack2017.app"
-            BlueprintName = "BlueHack2017"
-            ReferencedContainer = "container:BlueHack2017.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

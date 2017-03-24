@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B76B53DE4D095A52CBC4A05 /* Pods_BlueHack2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D5D48F6F58A85621B6B26F /* Pods_BlueHack2017.framework */; };
 		BC8EF1151E8544D700767B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1141E8544D700767B42 /* AppDelegate.swift */; };
 		BC8EF1171E8544D700767B42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1161E8544D700767B42 /* ViewController.swift */; };
 		BC8EF11A1E8544D700767B42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8EF1181E8544D700767B42 /* Main.storyboard */; };
 		BC8EF11C1E8544D700767B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8EF11B1E8544D700767B42 /* Assets.xcassets */; };
 		BC8EF11F1E8544D700767B42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8EF11D1E8544D700767B42 /* LaunchScreen.storyboard */; };
+		BC8EF1271E854D1300767B42 /* ToneAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1261E854D1300767B42 /* ToneAnalyzer.swift */; };
+		BC8EF1291E854DA200767B42 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1281E854DA200767B42 /* Credentials.swift */; };
+		BCBF96CB1E857F5000F2116E /* TextSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF96CA1E857F5000F2116E /* TextSpeech.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8702A4B2F5CE5E383E0E53F3 /* Pods-BlueHack2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueHack2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueHack2017/Pods-BlueHack2017.debug.xcconfig"; sourceTree = "<group>"; };
 		BC8EF1111E8544D700767B42 /* BlueHack2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueHack2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8EF1141E8544D700767B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8EF1161E8544D700767B42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,11 @@
 		BC8EF11B1E8544D700767B42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC8EF11E1E8544D700767B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC8EF1201E8544D700767B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8EF1261E854D1300767B42 /* ToneAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToneAnalyzer.swift; sourceTree = "<group>"; };
+		BC8EF1281E854DA200767B42 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		BCBF96CA1E857F5000F2116E /* TextSpeech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSpeech.swift; sourceTree = "<group>"; };
+		D6C912B525A400702402403C /* Pods-BlueHack2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueHack2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueHack2017/Pods-BlueHack2017.release.xcconfig"; sourceTree = "<group>"; };
+		E1D5D48F6F58A85621B6B26F /* Pods_BlueHack2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueHack2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B76B53DE4D095A52CBC4A05 /* Pods_BlueHack2017.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EDD5587EC3DDE4968D07897 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1D5D48F6F58A85621B6B26F /* Pods_BlueHack2017.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67D9197433CEF81EC20B2749 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8702A4B2F5CE5E383E0E53F3 /* Pods-BlueHack2017.debug.xcconfig */,
+				D6C912B525A400702402403C /* Pods-BlueHack2017.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BC8EF1081E8544D700767B42 = {
 			isa = PBXGroup;
 			children = (
 				BC8EF1131E8544D700767B42 /* BlueHack2017 */,
 				BC8EF1121E8544D700767B42 /* Products */,
+				67D9197433CEF81EC20B2749 /* Pods */,
+				3EDD5587EC3DDE4968D07897 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +84,41 @@
 		BC8EF1131E8544D700767B42 /* BlueHack2017 */ = {
 			isa = PBXGroup;
 			children = (
+				BCBF96C91E85621400F2116E /* Util */,
+				BCBF96C81E85620000F2116E /* Controller */,
+				BCBF96C71E8561F700F2116E /* Model */,
 				BC8EF1141E8544D700767B42 /* AppDelegate.swift */,
-				BC8EF1161E8544D700767B42 /* ViewController.swift */,
 				BC8EF1181E8544D700767B42 /* Main.storyboard */,
 				BC8EF11B1E8544D700767B42 /* Assets.xcassets */,
 				BC8EF11D1E8544D700767B42 /* LaunchScreen.storyboard */,
 				BC8EF1201E8544D700767B42 /* Info.plist */,
 			);
 			path = BlueHack2017;
+			sourceTree = "<group>";
+		};
+		BCBF96C71E8561F700F2116E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BCBF96C81E85620000F2116E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC8EF1161E8544D700767B42 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BCBF96C91E85621400F2116E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BC8EF1261E854D1300767B42 /* ToneAnalyzer.swift */,
+				BC8EF1281E854DA200767B42 /* Credentials.swift */,
+				BCBF96CA1E857F5000F2116E /* TextSpeech.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC8EF1231E8544D700767B42 /* Build configuration list for PBXNativeTarget "BlueHack2017" */;
 			buildPhases = (
+				68A895A4D6DC4A651425AE06 /* [CP] Check Pods Manifest.lock */,
 				BC8EF10D1E8544D700767B42 /* Sources */,
 				BC8EF10E1E8544D700767B42 /* Frameworks */,
 				BC8EF10F1E8544D700767B42 /* Resources */,
+				BAF04E9AE93528C90B249717 /* [CP] Embed Pods Frameworks */,
+				FCDDD896360E7D014AACF32F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +192,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		68A895A4D6DC4A651425AE06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BAF04E9AE93528C90B249717 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueHack2017/Pods-BlueHack2017-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCDDD896360E7D014AACF32F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueHack2017/Pods-BlueHack2017-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC8EF10D1E8544D700767B42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC8EF1271E854D1300767B42 /* ToneAnalyzer.swift in Sources */,
 				BC8EF1171E8544D700767B42 /* ViewController.swift in Sources */,
+				BCBF96CB1E857F5000F2116E /* TextSpeech.swift in Sources */,
+				BC8EF1291E854DA200767B42 /* Credentials.swift in Sources */,
 				BC8EF1151E8544D700767B42 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +370,7 @@
 		};
 		BC8EF1241E8544D700767B42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8702A4B2F5CE5E383E0E53F3 /* Pods-BlueHack2017.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7984M9FF87;
@@ -272,6 +384,7 @@
 		};
 		BC8EF1251E8544D700767B42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6C912B525A400702402403C /* Pods-BlueHack2017.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7984M9FF87;
@@ -302,6 +415,7 @@
 				BC8EF1251E8544D700767B42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

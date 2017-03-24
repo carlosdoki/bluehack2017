@@ -1,0 +1,6 @@
+framework module Pods_BlueHack2017 {
+  umbrella header "Pods-BlueHack2017-umbrella.h"
+
+  export *
+  module * { export * }
+}
