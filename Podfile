@@ -7,5 +7,5 @@ target 'BlueHack2017' do
 
   # Pods for BlueHack2017
    pod 'Alamofire'
-   pod 'SwiftySound'
+   pod 'ObjCMongoDB'
 end

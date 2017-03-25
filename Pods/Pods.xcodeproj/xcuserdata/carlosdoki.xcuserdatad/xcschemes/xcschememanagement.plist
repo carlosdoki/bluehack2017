@@ -9,12 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ObjCMongoDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-BlueHack2017.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftySound.xcscheme</key>
+		<key>mongo-c-driver.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,7 +27,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>87D7FC602048DCC639D600A2B37C04AE</key>
+		<key>11E3BE698F283C1D45FB6163410FE423</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1C5826235E0CD27FFB2E6581BBCFD03C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8AF779634A26508188268F2AB221DAE1</key>
+		<key>C1F8F2F3EDE16926DD0D834320A1C60D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

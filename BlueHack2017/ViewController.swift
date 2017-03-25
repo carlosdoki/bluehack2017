@@ -163,7 +163,8 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
     
     
     @IBAction func testeBtnTapped(_ sender: UIButton) {
-        let tone = ToneAnalyzer(texto: "Olá tudo bem" )
+        let texto = "Eu quero comer chocolate"
+        let tone = ToneAnalyzer(texto: texto )
         tone.getTone {
             var face : String = "joy"
             
@@ -223,12 +224,18 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
             print("sadnessScore=\(tone.sadnessScore)")
             print("joyScore=\(tone.joyScore)")
             
-            
-            let chat2 = chat(chat: "Olá tudo bem", face: face, usuario: true)
+            let currentDate = Date()
+            let since1970 = currentDate.timeIntervalSince1970
+            let data =  Int(since1970 * 1000)
+            let mongo = MongoDB(chat: texto, chatDate: Double(data), anger: tone.angerScore, disgust: tone.disgustScore, fear: tone.fearScore, sandness: tone.sadnessScore, joy: tone.joyScore)
+            mongo.postData {
+                //print("dados")
+            }
+            let chat2 = chat(chat: texto, face: face, usuario: true)
             self.chats.append(chat2)
             self.tableView.reloadData()
             
-            let chat3 = Chatbot(texto: "Olá tudo bem")
+            let chat3 = Chatbot(texto: texto)
             chat3.sendChat {
                 let username = Credentials.TextToSpeechUsername
                 let password = Credentials.TextToSpeechPassword
@@ -309,6 +316,14 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
                             }
                         }
                     }
+                }
+                
+                let currentDate = Date()
+                let since1970 = currentDate.timeIntervalSince1970
+                let data =  Int(since1970 * 1000)
+                let mongo = MongoDB(chat: "Olá tudo bem", chatDate: Double(data), anger: tone.angerScore, disgust: tone.disgustScore, fear: tone.fearScore, sandness: tone.sadnessScore, joy: tone.joyScore)
+                mongo.postData {
+                    print("dados")
                 }
                 
                 let chat2 = chat(chat: self.texto, face: face, usuario: true)

@@ -28,7 +28,6 @@ class chatCell: UITableViewCell {
         } else {
             self.chatLbl.textAlignment = .left
             self.faceImg.image = UIImage(named: face)
-//            self.chatLbl.textColor = UIColor(red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>)
         }
     }
 }

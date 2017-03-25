@@ -1,15 +1,30 @@
 PODS:
   - Alamofire (4.4.0)
-  - SwiftySound (0.2.0)
+  - mongo-c-driver (0.8.1)
+  - ObjCMongoDB (0.12.0):
+    - mongo-c-driver (~> 0.8.1)
+    - ObjCMongoDB/BSON (= 0.12.0)
+    - ObjCMongoDB/Mongo (= 0.12.0)
+    - ObjCMongoDB/OrderedDictionary (= 0.12.0)
+  - ObjCMongoDB/BSON (0.12.0):
+    - mongo-c-driver (~> 0.8.1)
+    - ObjCMongoDB/OrderedDictionary (~> 0.12.0)
+  - ObjCMongoDB/Mongo (0.12.0):
+    - mongo-c-driver (~> 0.8.1)
+    - ObjCMongoDB/BSON (~> 0.12.0)
+    - ObjCMongoDB/OrderedDictionary (~> 0.12.0)
+  - ObjCMongoDB/OrderedDictionary (0.12.0):
+    - mongo-c-driver (~> 0.8.1)
 
 DEPENDENCIES:
   - Alamofire
-  - SwiftySound
+  - ObjCMongoDB
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
-  SwiftySound: 8f03e934d6cc5e809e89d86ddcf6b43a5a3347ac
+  mongo-c-driver: 56558b8009f8d27549b23b62ce64fe33b9818703
+  ObjCMongoDB: 465dffcaf56a852381ee34bef0f98828398c8cfc
 
-PODFILE CHECKSUM: 6dd872487082a96e6d708126b03f581a18894cc8
+PODFILE CHECKSUM: 3c9c5585e3434dec546ea419b68201b3e649684b
 
 COCOAPODS: 1.2.0
