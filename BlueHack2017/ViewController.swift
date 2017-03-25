@@ -10,10 +10,12 @@ import UIKit
 import Speech
 import AVFoundation
 
-class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlayerDelegate {
+class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlayerDelegate, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var microphoneButton: UIButton!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var microphoneImg: UIImageView!
     
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "pt_BR"))  //1
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
@@ -25,9 +27,14 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
     var speechUrl : URL!
     var avPlayer = AVAudioPlayer()
     var musicPlayer: AVAudioPlayer!
+    var chats = [chat]()
+    var texto : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
         
         microphoneButton.isEnabled = false  //2
         
@@ -61,6 +68,23 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
         
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return chats.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let chat = chats[indexPath.row]
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "ChatCell") as? chatCell {
+            cell.configureCell(chat: chat.chat, face: chat.face, usuario: chat.usuario)
+            return cell
+        } else {
+            return chatCell()
+        }
+    }
     
     func startRecording() {
         
@@ -96,7 +120,9 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
             
             if result != nil {
                 
-                self.textView.text = result?.bestTranscription.formattedString
+                //self.textView.text = result?.bestTranscription.formattedString
+                self.texto = result?.bestTranscription.formattedString
+
                 isFinal = (result?.isFinal)!
             }
             
@@ -124,7 +150,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
             print("audioEngine couldn't start because of an error.")
         }
         
-        textView.text = "Say something, I'm listening!"
+        //textView.text = "Say something, I'm listening!"
         
     }
     
@@ -136,20 +162,89 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
         }
     }
     
-    @IBAction func microphoneTapped(_ sender: UIButton) {
+    @IBAction func tappedMicrophone(_ sender: Any) {
         if audioEngine.isRunning {
             audioEngine.stop()
             recognitionRequest?.endAudio()
-            microphoneButton.isEnabled = false
-            microphoneButton.setTitle("Start Recording", for: .normal)
-            let tone = ToneAnalyzer(texto: textView.text)
+            microphoneImg.image = UIImage(named: "microphone-off")
+            let tone = ToneAnalyzer(texto: self.texto )
             tone.getTone {
-                //print("toneName=\(tone.tone_name),score=\(tone.score)")
+                var face : String = "joy"
+                
+                if tone.angerScore > tone.disgustScore {
+                    if tone.angerScore > tone.fearScore {
+                        if tone.angerScore > tone.joyScore {
+                            if tone.angerScore > tone.sadnessScore {
+                                face = "anger"
+                            }
+                        }
+                    }
+                }
+                
+                if tone.disgustScore > tone.angerScore {
+                    if tone.disgustScore > tone.fearScore {
+                        if tone.disgustScore > tone.joyScore {
+                            if tone.disgustScore > tone.sadnessScore {
+                                face = "digust"
+                            }
+                        }
+                    }
+                }
+                
+                if tone.fearScore > tone.angerScore {
+                    if tone.fearScore > tone.disgustScore {
+                        if tone.fearScore > tone.joyScore {
+                            if tone.fearScore > tone.sadnessScore {
+                                face = "fear"
+                            }
+                        }
+                    }
+                }
+                
+                if tone.joyScore > tone.angerScore {
+                    if tone.joyScore > tone.disgustScore {
+                        if tone.joyScore > tone.fearScore {
+                            if tone.joyScore > tone.sadnessScore {
+                                face = "joy"
+                            }
+                        }
+                    }
+                }
+                
+                if tone.sadnessScore > tone.angerScore {
+                    if tone.sadnessScore > tone.disgustScore {
+                        if tone.sadnessScore > tone.fearScore {
+                            if tone.sadnessScore > tone.joyScore {
+                                face = "sadness"
+                            }
+                        }
+                    }
+                }
+                
+                let chat2 = chat(chat: self.texto, face: face, usuario: true)
+                self.chats.append(chat2)
+                self.tableView.reloadData()
+                
+                let username = Credentials.TextToSpeechUsername
+                let password = Credentials.TextToSpeechPassword
+                let textToSpeech = TextToSpeech(username: username, password: password)
+                
+                let failure = { (error: Error) in print(error) }
+                textToSpeech.synthesize(self.texto, voice: "pt-BR_IsabelaVoice", failure: failure) { data in
+                    self.musicPlayer = try! AVAudioPlayer(data: data)
+                    self.musicPlayer.prepareToPlay()
+                    self.musicPlayer.play()
+                }
+                
             }
         } else {
             startRecording()
-            microphoneButton.setTitle("Stop Recording", for: .normal)
+            microphoneImg.image = UIImage(named: "microphone-on")
         }
+    }
+    
+    @IBAction func microphoneTapped(_ sender: UIButton) {
+
     }
     
     

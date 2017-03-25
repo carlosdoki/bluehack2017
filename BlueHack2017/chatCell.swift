@@ -10,15 +10,18 @@ import UIKit
 
 class chatCell: UITableViewCell {
 
+    @IBOutlet weak var chatLbl: UILabel!
+    @IBOutlet weak var faceImg: UIImageView!
+    
+    var chat: chat!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configureCell(chat: String, face: String, usuario: Bool) {
+        self.chatLbl.text = chat
+        self.faceImg.image = UIImage(named: face)
     }
-
 }

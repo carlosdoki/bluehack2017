@@ -3,10 +3,18 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "TextSpeech.getAudio(completed : () -&gt; ()) -&gt; ():TextSpeech.swift">
+         contextName = "ViewController.tappedMicrophone(Any) -&gt; ():ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "">
+               value = "self.texto">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.(startRecording() -&gt; ()).(closure #1):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "result?.bestTranscription.formattedString">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -15,6 +23,14 @@
          <PersistentStrings>
             <PersistentString
                value = "tones[x][&quot;tone_name&quot;] as? String">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TextSpeech.getAudio(completed : () -&gt; ()) -&gt; ():TextSpeech.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
