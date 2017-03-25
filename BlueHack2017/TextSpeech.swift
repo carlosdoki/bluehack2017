@@ -12,13 +12,13 @@ import Alamofire
 public class TextSpeech {
     
     private var _texto: String!
-    private var _audio: Data!
+    private var _audio: URL!
     
     var texto: String {
         return _texto
     }
     
-    var audio: Data {
+    var audio: URL {
         return _audio
     }
     
@@ -28,13 +28,15 @@ public class TextSpeech {
     
     func getAudio(completed: @escaping DownloadComplete) {
         let toneUrl = "\(URL_TEXT_SPEECH)\(self.texto.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)\(TEXT_SPEECH_VOICE)"
-        Alamofire.request(toneUrl)
-            .authenticate(user: Credentials.SpeechToTextUsername, password: Credentials.SpeechToTextPassword)
+        let destination = DownloadRequest.suggestedDownloadDestination(for: .cachesDirectory, in: .userDomainMask)
+        
+        Alamofire.download(toneUrl, to: destination)
+            .authenticate(user: Credentials.TextToSpeechUsername, password: Credentials.TextToSpeechPassword)
             .responseData { response in
-                guard let data = response.result.value else { return }
-                self._audio = data
-                print("\(data)")
-                completed()
+            print(response.destinationURL!)
+            self._audio = response.destinationURL!
+            completed()
         }
     }
 }
+

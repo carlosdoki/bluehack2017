@@ -11,11 +11,12 @@
 		BC8EF1151E8544D700767B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1141E8544D700767B42 /* AppDelegate.swift */; };
 		BC8EF1171E8544D700767B42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1161E8544D700767B42 /* ViewController.swift */; };
 		BC8EF11A1E8544D700767B42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8EF1181E8544D700767B42 /* Main.storyboard */; };
-		BC8EF11C1E8544D700767B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8EF11B1E8544D700767B42 /* Assets.xcassets */; };
 		BC8EF11F1E8544D700767B42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8EF11D1E8544D700767B42 /* LaunchScreen.storyboard */; };
 		BC8EF1271E854D1300767B42 /* ToneAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1261E854D1300767B42 /* ToneAnalyzer.swift */; };
 		BC8EF1291E854DA200767B42 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1281E854DA200767B42 /* Credentials.swift */; };
 		BCBF96CB1E857F5000F2116E /* TextSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF96CA1E857F5000F2116E /* TextSpeech.swift */; };
+		BCBF96CD1E85AC0A00F2116E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBF96CC1E85AC0A00F2116E /* Assets.xcassets */; };
+		BCBF96CF1E85AC1D00F2116E /* hello_world.wav in Resources */ = {isa = PBXBuildFile; fileRef = BCBF96CE1E85AC1D00F2116E /* hello_world.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +25,14 @@
 		BC8EF1141E8544D700767B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8EF1161E8544D700767B42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC8EF1191E8544D700767B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BC8EF11B1E8544D700767B42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC8EF11E1E8544D700767B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC8EF1201E8544D700767B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC8EF1261E854D1300767B42 /* ToneAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToneAnalyzer.swift; sourceTree = "<group>"; };
 		BC8EF1281E854DA200767B42 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		BCA6B60D1E85B5A3009A3C6F /* hello_wprd.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = hello_wprd.ogg; sourceTree = "<group>"; };
 		BCBF96CA1E857F5000F2116E /* TextSpeech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSpeech.swift; sourceTree = "<group>"; };
+		BCBF96CC1E85AC0A00F2116E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCBF96CE1E85AC1D00F2116E /* hello_world.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hello_world.wav; sourceTree = "<group>"; };
 		D6C912B525A400702402403C /* Pods-BlueHack2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueHack2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueHack2017/Pods-BlueHack2017.release.xcconfig"; sourceTree = "<group>"; };
 		E1D5D48F6F58A85621B6B26F /* Pods_BlueHack2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueHack2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,9 +92,11 @@
 				BCBF96C71E8561F700F2116E /* Model */,
 				BC8EF1141E8544D700767B42 /* AppDelegate.swift */,
 				BC8EF1181E8544D700767B42 /* Main.storyboard */,
-				BC8EF11B1E8544D700767B42 /* Assets.xcassets */,
 				BC8EF11D1E8544D700767B42 /* LaunchScreen.storyboard */,
+				BCBF96CC1E85AC0A00F2116E /* Assets.xcassets */,
 				BC8EF1201E8544D700767B42 /* Info.plist */,
+				BCA6B60D1E85B5A3009A3C6F /* hello_wprd.ogg */,
+				BCBF96CE1E85AC1D00F2116E /* hello_world.wav */,
 			);
 			path = BlueHack2017;
 			sourceTree = "<group>";
@@ -185,7 +190,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC8EF11F1E8544D700767B42 /* LaunchScreen.storyboard in Resources */,
-				BC8EF11C1E8544D700767B42 /* Assets.xcassets in Resources */,
+				BCBF96CD1E85AC0A00F2116E /* Assets.xcassets in Resources */,
+				BCBF96CF1E85AC1D00F2116E /* hello_world.wav in Resources */,
 				BC8EF11A1E8544D700767B42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

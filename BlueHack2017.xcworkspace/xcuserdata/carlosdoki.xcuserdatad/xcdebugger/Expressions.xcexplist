@@ -3,10 +3,26 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "TextSpeech.getAudio(completed : () -&gt; ()) -&gt; ():TextSpeech.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ToneAnalyzer.(getTone(completed : () -&gt; ()) -&gt; ()).(closure #1):ToneAnalyzer.swift">
          <PersistentStrings>
             <PersistentString
                value = "tones[x][&quot;tone_name&quot;] as? String">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TextSpeech.(getAudio(completed : () -&gt; ()) -&gt; ()).(closure #1):TextSpeech.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.result.success">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
