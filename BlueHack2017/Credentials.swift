@@ -14,11 +14,11 @@ let TONE_VERSION="version=2016-05-19"
 let URL_TEXT_SPEECH = "https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?accept=audio/wav&text="
 let TEXT_SPEECH_VOICE = "&voice=pt-BR_IsabelaVoice"
 
-//"https://gateway.watsonplatform.net/conversation/api/v1/workspaces?version=2017-02-03"
+//"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/516a6e4a-fdf9-4aa7-9502-ae6e03bd0c32/message?version=2017-02-03"
 
-let URL_CONVERSATION = "https://gateway.watsonplatform.net/conversation/api/v1/workspaces?"
+let URL_CONVERSATION = "https://gateway.watsonplatform.net/conversation/api/v1/workspaces"
 let CONVERTION_VERSION = "version=2017-02-03"
-let CONVERSATION_WORKSPACE = "BlueHack2017"
+let CONVERSATION_WORKSPACE = "516a6e4a-fdf9-4aa7-9502-ae6e03bd0c32"
 
 typealias DownloadComplete = () -> ()
 

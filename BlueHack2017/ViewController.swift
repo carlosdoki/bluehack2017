@@ -167,6 +167,23 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
         }
     }
     
+    @IBAction func chatBtnTapped(_ sender: Any) {
+        let chat = Chatbot(texto: "Ola tudo bem")
+        chat.sendChat {
+            let username = Credentials.TextToSpeechUsername
+            let password = Credentials.TextToSpeechPassword
+            let textToSpeech = TextToSpeech(username: username, password: password)
+            
+            let text = chat.resposta
+            let failure = { (error: Error) in print(error) }
+            textToSpeech.synthesize(text, voice: "pt-BR_IsabelaVoice", failure: failure) { data in
+                self.musicPlayer = try! AVAudioPlayer(data: data)
+                self.musicPlayer.prepareToPlay()
+                self.musicPlayer.play()
+            }
+        }
+    }
+    
     @IBAction func testeBtnTapped(_ sender: Any) {
         let tone = ToneAnalyzer(texto: "Oi tudo bem")
         tone.getTone {

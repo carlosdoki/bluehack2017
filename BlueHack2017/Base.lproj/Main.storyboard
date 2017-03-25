@@ -37,6 +37,14 @@
                                     <action selector="microphoneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yon-fx-xML"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHz-ql-wuZ">
+                                <rect key="frame" x="264" y="611" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Analizar"/>
+                                <connections>
+                                    <action selector="testeBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kaI-N8-C2I"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVs-Ck-iTZ">
                                 <rect key="frame" x="16" y="611" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -45,12 +53,12 @@
                                     <action selector="teste2BtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uvU-IG-Ijj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHz-ql-wuZ">
-                                <rect key="frame" x="264" y="611" width="79" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUX-ei-Rfl">
+                                <rect key="frame" x="131" y="637" width="113" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Analizar"/>
+                                <state key="normal" title="Chat Bot"/>
                                 <connections>
-                                    <action selector="testeBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kaI-N8-C2I"/>
+                                    <action selector="chatBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1le-bm-TmU"/>
                                 </connections>
                             </button>
                         </subviews>

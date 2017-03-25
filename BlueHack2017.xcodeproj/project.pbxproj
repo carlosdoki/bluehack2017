@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4B76B53DE4D095A52CBC4A05 /* Pods_BlueHack2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D5D48F6F58A85621B6B26F /* Pods_BlueHack2017.framework */; };
-		BC2F070E1E86B127006288B0 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC2F070D1E86B127006288B0 /* music.mp3 */; };
 		BC2F07101E86B4F4006288B0 /* TextSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F070F1E86B4F4006288B0 /* TextSpeech.swift */; };
 		BC2F07131E86B5A8006288B0 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F07121E86B5A8006288B0 /* JSON.swift */; };
 		BC2F07151E86B60A006288B0 /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F07141E86B60A006288B0 /* Voice.swift */; };
@@ -22,6 +21,7 @@
 		BC2F07251E86B7FC006288B0 /* CustomVoiceUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F07241E86B7FC006288B0 /* CustomVoiceUpdate.swift */; };
 		BC2F07271E86B843006288B0 /* CustomizationWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F07261E86B843006288B0 /* CustomizationWord.swift */; };
 		BC2F07291E86B872006288B0 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F07281E86B872006288B0 /* Translation.swift */; };
+		BC2F072D1E86C6EA006288B0 /* ChatBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F072C1E86C6EA006288B0 /* ChatBot.swift */; };
 		BC8EF1151E8544D700767B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1141E8544D700767B42 /* AppDelegate.swift */; };
 		BC8EF1171E8544D700767B42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1161E8544D700767B42 /* ViewController.swift */; };
 		BC8EF11A1E8544D700767B42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8EF1181E8544D700767B42 /* Main.storyboard */; };
@@ -29,12 +29,10 @@
 		BC8EF1271E854D1300767B42 /* ToneAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1261E854D1300767B42 /* ToneAnalyzer.swift */; };
 		BC8EF1291E854DA200767B42 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1281E854DA200767B42 /* Credentials.swift */; };
 		BCBF96CD1E85AC0A00F2116E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBF96CC1E85AC0A00F2116E /* Assets.xcassets */; };
-		BCBF96CF1E85AC1D00F2116E /* hello.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBF96CE1E85AC1D00F2116E /* hello.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8702A4B2F5CE5E383E0E53F3 /* Pods-BlueHack2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueHack2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueHack2017/Pods-BlueHack2017.debug.xcconfig"; sourceTree = "<group>"; };
-		BC2F070D1E86B127006288B0 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		BC2F070F1E86B4F4006288B0 /* TextSpeech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSpeech.swift; sourceTree = "<group>"; };
 		BC2F07121E86B5A8006288B0 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		BC2F07141E86B60A006288B0 /* Voice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Voice.swift; sourceTree = "<group>"; };
@@ -48,6 +46,7 @@
 		BC2F07241E86B7FC006288B0 /* CustomVoiceUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomVoiceUpdate.swift; sourceTree = "<group>"; };
 		BC2F07261E86B843006288B0 /* CustomizationWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizationWord.swift; sourceTree = "<group>"; };
 		BC2F07281E86B872006288B0 /* Translation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		BC2F072C1E86C6EA006288B0 /* ChatBot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBot.swift; sourceTree = "<group>"; };
 		BC8EF1111E8544D700767B42 /* BlueHack2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueHack2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8EF1141E8544D700767B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8EF1161E8544D700767B42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +56,6 @@
 		BC8EF1261E854D1300767B42 /* ToneAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToneAnalyzer.swift; sourceTree = "<group>"; };
 		BC8EF1281E854DA200767B42 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		BCBF96CC1E85AC0A00F2116E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BCBF96CE1E85AC1D00F2116E /* hello.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hello.mp3; sourceTree = "<group>"; };
 		D6C912B525A400702402403C /* Pods-BlueHack2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueHack2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueHack2017/Pods-BlueHack2017.release.xcconfig"; sourceTree = "<group>"; };
 		E1D5D48F6F58A85621B6B26F /* Pods_BlueHack2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueHack2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -140,8 +138,6 @@
 				BC8EF11D1E8544D700767B42 /* LaunchScreen.storyboard */,
 				BCBF96CC1E85AC0A00F2116E /* Assets.xcassets */,
 				BC8EF1201E8544D700767B42 /* Info.plist */,
-				BC2F070D1E86B127006288B0 /* music.mp3 */,
-				BCBF96CE1E85AC1D00F2116E /* hello.mp3 */,
 			);
 			path = BlueHack2017;
 			sourceTree = "<group>";
@@ -167,6 +163,7 @@
 				BC8EF1261E854D1300767B42 /* ToneAnalyzer.swift */,
 				BC8EF1281E854DA200767B42 /* Credentials.swift */,
 				BC2F070F1E86B4F4006288B0 /* TextSpeech.swift */,
+				BC2F072C1E86C6EA006288B0 /* ChatBot.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -239,10 +236,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC2F070E1E86B127006288B0 /* music.mp3 in Resources */,
 				BC8EF11F1E8544D700767B42 /* LaunchScreen.storyboard in Resources */,
 				BCBF96CD1E85AC0A00F2116E /* Assets.xcassets in Resources */,
-				BCBF96CF1E85AC1D00F2116E /* hello.mp3 in Resources */,
 				BC8EF11A1E8544D700767B42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +302,7 @@
 				BC2F07231E86B792006288B0 /* Word.swift in Sources */,
 				BC2F07271E86B843006288B0 /* CustomizationWord.swift in Sources */,
 				BC2F07131E86B5A8006288B0 /* JSON.swift in Sources */,
+				BC2F072D1E86C6EA006288B0 /* ChatBot.swift in Sources */,
 				BC8EF1171E8544D700767B42 /* ViewController.swift in Sources */,
 				BC2F07211E86B757006288B0 /* CustomizationID.swift in Sources */,
 				BC2F07251E86B7FC006288B0 /* CustomVoiceUpdate.swift in Sources */,
