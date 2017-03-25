@@ -12,7 +12,6 @@ import AVFoundation
 
 class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlayerDelegate, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var microphoneButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var microphoneImg: UIImageView!
@@ -162,6 +161,97 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
         }
     }
     
+    
+    @IBAction func testeBtnTapped(_ sender: UIButton) {
+        let tone = ToneAnalyzer(texto: "Olá tudo bem" )
+        tone.getTone {
+            var face : String = "joy"
+            
+            if tone.angerScore > tone.disgustScore {
+                if tone.angerScore > tone.fearScore {
+                    if tone.angerScore > tone.joyScore {
+                        if tone.angerScore > tone.sadnessScore {
+                            face = "anger"
+                        }
+                    }
+                }
+            }
+            
+            if tone.disgustScore > tone.angerScore {
+                if tone.disgustScore > tone.fearScore {
+                    if tone.disgustScore > tone.joyScore {
+                        if tone.disgustScore > tone.sadnessScore {
+                            face = "digust"
+                        }
+                    }
+                }
+            }
+            
+            if tone.fearScore > tone.angerScore {
+                if tone.fearScore > tone.disgustScore {
+                    if tone.fearScore > tone.joyScore {
+                        if tone.fearScore > tone.sadnessScore {
+                            face = "fear"
+                        }
+                    }
+                }
+            }
+            
+            if tone.joyScore > tone.angerScore {
+                if tone.joyScore > tone.disgustScore {
+                    if tone.joyScore > tone.fearScore {
+                        if tone.joyScore > tone.sadnessScore {
+                            face = "joy"
+                        }
+                    }
+                }
+            }
+            
+            if tone.sadnessScore > tone.angerScore {
+                if tone.sadnessScore > tone.disgustScore {
+                    if tone.sadnessScore > tone.fearScore {
+                        if tone.sadnessScore > tone.joyScore {
+                            face = "sadness"
+                        }
+                    }
+                }
+            }
+            
+            print("angerScore=\(tone.angerScore)")
+            print("disgustScore=\(tone.disgustScore)")
+            print("fearScore=\(tone.fearScore)")
+            print("sadnessScore=\(tone.sadnessScore)")
+            print("joyScore=\(tone.joyScore)")
+            
+            
+            let chat2 = chat(chat: "Olá tudo bem", face: face, usuario: true)
+            self.chats.append(chat2)
+            self.tableView.reloadData()
+            
+            let chat3 = Chatbot(texto: "Olá tudo bem")
+            chat3.sendChat {
+                let username = Credentials.TextToSpeechUsername
+                let password = Credentials.TextToSpeechPassword
+                let textToSpeech = TextToSpeech(username: username, password: password)
+                
+                if chat3.resposta != nil {
+                    let text = chat3.resposta
+                    let failure = { (error: Error) in print(error) }
+                    textToSpeech.synthesize(text, voice: "pt-BR_IsabelaVoice", failure: failure) { data in
+                        self.musicPlayer = try! AVAudioPlayer(data: data)
+                        self.musicPlayer.prepareToPlay()
+                        self.musicPlayer.play()
+                        let chat4 = chat(chat: text, face: face, usuario: false)
+                        self.chats.append(chat4)
+                        self.tableView.reloadData()
+                    }
+                }
+            }
+        }
+        
+        
+    }
+    
     @IBAction func tappedMicrophone(_ sender: Any) {
         if audioEngine.isRunning {
             audioEngine.stop()
@@ -249,54 +339,6 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
             startRecording()
             microphoneImg.image = UIImage(named: "microphone-on")
         }
-    }
-    
-    @IBAction func microphoneTapped(_ sender: UIButton) {
-        
-    }
-    
-    
-    @IBAction func teste2BtnTapped(_ sender: Any) {
-        let username = Credentials.TextToSpeechUsername
-        let password = Credentials.TextToSpeechPassword
-        let textToSpeech = TextToSpeech(username: username, password: password)
-        
-        let text = "Olá tudo bem"
-        let failure = { (error: Error) in print(error) }
-        textToSpeech.synthesize(text, voice: "pt-BR_IsabelaVoice", failure: failure) { data in
-            self.musicPlayer = try! AVAudioPlayer(data: data)
-            self.musicPlayer.prepareToPlay()
-            self.musicPlayer.play()
-        }
-    }
-    
-    @IBAction func chatBtnTapped(_ sender: Any) {
-        let chat = Chatbot(texto: "Ola tudo bem")
-        chat.sendChat {
-            let username = Credentials.TextToSpeechUsername
-            let password = Credentials.TextToSpeechPassword
-            let textToSpeech = TextToSpeech(username: username, password: password)
-            
-            let text = chat.resposta
-            let failure = { (error: Error) in print(error) }
-            textToSpeech.synthesize(text, voice: "pt-BR_IsabelaVoice", failure: failure) { data in
-                self.musicPlayer = try! AVAudioPlayer(data: data)
-                self.musicPlayer.prepareToPlay()
-                self.musicPlayer.play()
-            }
-        }
-    }
-    
-    @IBAction func testeBtnTapped(_ sender: Any) {
-        let tone = ToneAnalyzer(texto: "Oi tudo bem")
-        tone.getTone {
-            print("\(tone.angerScore)")
-            print("\(tone.disgustScore)")
-            print("\(tone.fearScore)")
-            print("\(tone.joyScore)")
-            print("\(tone.sadnessScore)")
-        }
-        
     }
 }
 
