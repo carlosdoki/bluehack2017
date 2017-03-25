@@ -8,19 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		4B76B53DE4D095A52CBC4A05 /* Pods_BlueHack2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D5D48F6F58A85621B6B26F /* Pods_BlueHack2017.framework */; };
+		BC2F070E1E86B127006288B0 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC2F070D1E86B127006288B0 /* music.mp3 */; };
+		BC2F07101E86B4F4006288B0 /* TextSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F070F1E86B4F4006288B0 /* TextSpeech.swift */; };
+		BC2F07131E86B5A8006288B0 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F07121E86B5A8006288B0 /* JSON.swift */; };
+		BC2F07151E86B60A006288B0 /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F07141E86B60A006288B0 /* Voice.swift */; };
+		BC2F07171E86B641006288B0 /* Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F07161E86B641006288B0 /* Customization.swift */; };
+		BC2F07191E86B681006288B0 /* RestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F07181E86B681006288B0 /* RestRequest.swift */; };
+		BC2F071B1E86B6BE006288B0 /* Promuciation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F071A1E86B6BE006288B0 /* Promuciation.swift */; };
+		BC2F071D1E86B6FF006288B0 /* AudioFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F071C1E86B6FF006288B0 /* AudioFormat.swift */; };
+		BC2F071F1E86B725006288B0 /* PhonemeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F071E1E86B725006288B0 /* PhonemeFormat.swift */; };
+		BC2F07211E86B757006288B0 /* CustomizationID.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F07201E86B757006288B0 /* CustomizationID.swift */; };
+		BC2F07231E86B792006288B0 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F07221E86B792006288B0 /* Word.swift */; };
+		BC2F07251E86B7FC006288B0 /* CustomVoiceUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F07241E86B7FC006288B0 /* CustomVoiceUpdate.swift */; };
+		BC2F07271E86B843006288B0 /* CustomizationWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F07261E86B843006288B0 /* CustomizationWord.swift */; };
+		BC2F07291E86B872006288B0 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F07281E86B872006288B0 /* Translation.swift */; };
 		BC8EF1151E8544D700767B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1141E8544D700767B42 /* AppDelegate.swift */; };
 		BC8EF1171E8544D700767B42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1161E8544D700767B42 /* ViewController.swift */; };
 		BC8EF11A1E8544D700767B42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8EF1181E8544D700767B42 /* Main.storyboard */; };
 		BC8EF11F1E8544D700767B42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8EF11D1E8544D700767B42 /* LaunchScreen.storyboard */; };
 		BC8EF1271E854D1300767B42 /* ToneAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1261E854D1300767B42 /* ToneAnalyzer.swift */; };
 		BC8EF1291E854DA200767B42 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1281E854DA200767B42 /* Credentials.swift */; };
-		BCBF96CB1E857F5000F2116E /* TextSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF96CA1E857F5000F2116E /* TextSpeech.swift */; };
 		BCBF96CD1E85AC0A00F2116E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBF96CC1E85AC0A00F2116E /* Assets.xcassets */; };
-		BCBF96CF1E85AC1D00F2116E /* hello_world.wav in Resources */ = {isa = PBXBuildFile; fileRef = BCBF96CE1E85AC1D00F2116E /* hello_world.wav */; };
+		BCBF96CF1E85AC1D00F2116E /* hello.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBF96CE1E85AC1D00F2116E /* hello.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8702A4B2F5CE5E383E0E53F3 /* Pods-BlueHack2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueHack2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueHack2017/Pods-BlueHack2017.debug.xcconfig"; sourceTree = "<group>"; };
+		BC2F070D1E86B127006288B0 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		BC2F070F1E86B4F4006288B0 /* TextSpeech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSpeech.swift; sourceTree = "<group>"; };
+		BC2F07121E86B5A8006288B0 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		BC2F07141E86B60A006288B0 /* Voice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Voice.swift; sourceTree = "<group>"; };
+		BC2F07161E86B641006288B0 /* Customization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customization.swift; sourceTree = "<group>"; };
+		BC2F07181E86B681006288B0 /* RestRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestRequest.swift; sourceTree = "<group>"; };
+		BC2F071A1E86B6BE006288B0 /* Promuciation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promuciation.swift; sourceTree = "<group>"; };
+		BC2F071C1E86B6FF006288B0 /* AudioFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFormat.swift; sourceTree = "<group>"; };
+		BC2F071E1E86B725006288B0 /* PhonemeFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhonemeFormat.swift; sourceTree = "<group>"; };
+		BC2F07201E86B757006288B0 /* CustomizationID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizationID.swift; sourceTree = "<group>"; };
+		BC2F07221E86B792006288B0 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		BC2F07241E86B7FC006288B0 /* CustomVoiceUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomVoiceUpdate.swift; sourceTree = "<group>"; };
+		BC2F07261E86B843006288B0 /* CustomizationWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizationWord.swift; sourceTree = "<group>"; };
+		BC2F07281E86B872006288B0 /* Translation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		BC8EF1111E8544D700767B42 /* BlueHack2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueHack2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8EF1141E8544D700767B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8EF1161E8544D700767B42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,10 +56,8 @@
 		BC8EF1201E8544D700767B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC8EF1261E854D1300767B42 /* ToneAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToneAnalyzer.swift; sourceTree = "<group>"; };
 		BC8EF1281E854DA200767B42 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
-		BCA6B60D1E85B5A3009A3C6F /* hello_wprd.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = hello_wprd.ogg; sourceTree = "<group>"; };
-		BCBF96CA1E857F5000F2116E /* TextSpeech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSpeech.swift; sourceTree = "<group>"; };
 		BCBF96CC1E85AC0A00F2116E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BCBF96CE1E85AC1D00F2116E /* hello_world.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hello_world.wav; sourceTree = "<group>"; };
+		BCBF96CE1E85AC1D00F2116E /* hello.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hello.mp3; sourceTree = "<group>"; };
 		D6C912B525A400702402403C /* Pods-BlueHack2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueHack2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueHack2017/Pods-BlueHack2017.release.xcconfig"; sourceTree = "<group>"; };
 		E1D5D48F6F58A85621B6B26F /* Pods_BlueHack2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueHack2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,6 +91,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BC2F07111E86B594006288B0 /* RestKit */ = {
+			isa = PBXGroup;
+			children = (
+				BC2F07121E86B5A8006288B0 /* JSON.swift */,
+				BC2F07141E86B60A006288B0 /* Voice.swift */,
+				BC2F07161E86B641006288B0 /* Customization.swift */,
+				BC2F07181E86B681006288B0 /* RestRequest.swift */,
+				BC2F071A1E86B6BE006288B0 /* Promuciation.swift */,
+				BC2F071C1E86B6FF006288B0 /* AudioFormat.swift */,
+				BC2F071E1E86B725006288B0 /* PhonemeFormat.swift */,
+				BC2F07201E86B757006288B0 /* CustomizationID.swift */,
+				BC2F07221E86B792006288B0 /* Word.swift */,
+				BC2F07241E86B7FC006288B0 /* CustomVoiceUpdate.swift */,
+				BC2F07261E86B843006288B0 /* CustomizationWord.swift */,
+				BC2F07281E86B872006288B0 /* Translation.swift */,
+			);
+			name = RestKit;
+			sourceTree = "<group>";
+		};
 		BC8EF1081E8544D700767B42 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +131,7 @@
 		BC8EF1131E8544D700767B42 /* BlueHack2017 */ = {
 			isa = PBXGroup;
 			children = (
+				BC2F07111E86B594006288B0 /* RestKit */,
 				BCBF96C91E85621400F2116E /* Util */,
 				BCBF96C81E85620000F2116E /* Controller */,
 				BCBF96C71E8561F700F2116E /* Model */,
@@ -95,8 +140,8 @@
 				BC8EF11D1E8544D700767B42 /* LaunchScreen.storyboard */,
 				BCBF96CC1E85AC0A00F2116E /* Assets.xcassets */,
 				BC8EF1201E8544D700767B42 /* Info.plist */,
-				BCA6B60D1E85B5A3009A3C6F /* hello_wprd.ogg */,
-				BCBF96CE1E85AC1D00F2116E /* hello_world.wav */,
+				BC2F070D1E86B127006288B0 /* music.mp3 */,
+				BCBF96CE1E85AC1D00F2116E /* hello.mp3 */,
 			);
 			path = BlueHack2017;
 			sourceTree = "<group>";
@@ -121,7 +166,7 @@
 			children = (
 				BC8EF1261E854D1300767B42 /* ToneAnalyzer.swift */,
 				BC8EF1281E854DA200767B42 /* Credentials.swift */,
-				BCBF96CA1E857F5000F2116E /* TextSpeech.swift */,
+				BC2F070F1E86B4F4006288B0 /* TextSpeech.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -163,6 +208,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7984M9FF87;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -189,9 +239,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2F070E1E86B127006288B0 /* music.mp3 in Resources */,
 				BC8EF11F1E8544D700767B42 /* LaunchScreen.storyboard in Resources */,
 				BCBF96CD1E85AC0A00F2116E /* Assets.xcassets in Resources */,
-				BCBF96CF1E85AC1D00F2116E /* hello_world.wav in Resources */,
+				BCBF96CF1E85AC1D00F2116E /* hello.mp3 in Resources */,
 				BC8EF11A1E8544D700767B42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,10 +303,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC8EF1271E854D1300767B42 /* ToneAnalyzer.swift in Sources */,
+				BC2F07191E86B681006288B0 /* RestRequest.swift in Sources */,
+				BC2F07231E86B792006288B0 /* Word.swift in Sources */,
+				BC2F07271E86B843006288B0 /* CustomizationWord.swift in Sources */,
+				BC2F07131E86B5A8006288B0 /* JSON.swift in Sources */,
 				BC8EF1171E8544D700767B42 /* ViewController.swift in Sources */,
-				BCBF96CB1E857F5000F2116E /* TextSpeech.swift in Sources */,
+				BC2F07211E86B757006288B0 /* CustomizationID.swift in Sources */,
+				BC2F07251E86B7FC006288B0 /* CustomVoiceUpdate.swift in Sources */,
+				BC2F07151E86B60A006288B0 /* Voice.swift in Sources */,
+				BC2F071B1E86B6BE006288B0 /* Promuciation.swift in Sources */,
+				BC2F07291E86B872006288B0 /* Translation.swift in Sources */,
+				BC2F071F1E86B725006288B0 /* PhonemeFormat.swift in Sources */,
+				BC2F071D1E86B6FF006288B0 /* AudioFormat.swift in Sources */,
+				BC2F07101E86B4F4006288B0 /* TextSpeech.swift in Sources */,
 				BC8EF1291E854DA200767B42 /* Credentials.swift in Sources */,
 				BC8EF1151E8544D700767B42 /* AppDelegate.swift in Sources */,
+				BC2F07171E86B641006288B0 /* Customization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

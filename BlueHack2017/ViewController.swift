@@ -21,7 +21,10 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
     private let audioEngine = AVAudioEngine()
     
     var toneAnalyze: ToneAnalyzer!
-    var player: AVAudioPlayer?
+    var player: AVPlayer!
+    var speechUrl : URL!
+    var avPlayer = AVAudioPlayer()
+    var musicPlayer: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +60,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
         }
         
     }
+    
     
     func startRecording() {
         
@@ -148,32 +152,30 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
         }
     }
     
+    
+    @IBAction func teste2BtnTapped(_ sender: Any) {
+        let username = Credentials.TextToSpeechUsername
+        let password = Credentials.TextToSpeechPassword
+        let textToSpeech = TextToSpeech(username: username, password: password)
+        
+        let text = "Olá tudo bem"
+        let failure = { (error: Error) in print(error) }
+        textToSpeech.synthesize(text, voice: "pt-BR_IsabelaVoice", failure: failure) { data in
+            self.musicPlayer = try! AVAudioPlayer(data: data)
+            self.musicPlayer.prepareToPlay()
+            self.musicPlayer.play()
+        }
+    }
+    
     @IBAction func testeBtnTapped(_ sender: Any) {
-        let speech = TextSpeech(texto: "Olá tudo bem")
-        speech.getAudio {
-            do {
-                
-                    
-                    self.player = try AVAudioPlayer(contentsOf: speech.audio)
-                    guard let player = self.player else { return }
-                    
-                    player.prepareToPlay()
-                    player.play()
-                
-            } catch let error {
-                print(error.localizedDescription)
-            }
-        } 
-
-
-        //        let tone = ToneAnalyzer(texto: "Oi tudo bem")
-        //        tone.getTone {
-        //            print("\(tone.angerScore)")
-        //            print("\(tone.disgustScore)")
-        //            print("\(tone.fearScore)")
-        //            print("\(tone.joyScore)")
-        //            print("\(tone.sadnessScore)")
-        //        }
+        let tone = ToneAnalyzer(texto: "Oi tudo bem")
+        tone.getTone {
+            print("\(tone.angerScore)")
+            print("\(tone.disgustScore)")
+            print("\(tone.fearScore)")
+            print("\(tone.joyScore)")
+            print("\(tone.sadnessScore)")
+        }
         
     }
 }
