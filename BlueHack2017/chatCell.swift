@@ -9,7 +9,7 @@
 import UIKit
 
 class chatCell: UITableViewCell {
-
+    
     @IBOutlet weak var chatLbl: UILabel!
     @IBOutlet weak var faceImg: UIImageView!
     
@@ -19,9 +19,15 @@ class chatCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     func configureCell(chat: String, face: String, usuario: Bool) {
         self.chatLbl.text = chat
-        self.faceImg.image = UIImage(named: face)
+        if usuario != true {
+            self.chatLbl.textAlignment = .right
+            self.faceImg.image = nil
+        } else {
+            self.chatLbl.textAlignment = .left
+            self.faceImg.image = UIImage(named: face)
+        }
     }
 }

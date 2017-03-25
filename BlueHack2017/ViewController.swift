@@ -122,7 +122,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
                 
                 //self.textView.text = result?.bestTranscription.formattedString
                 self.texto = result?.bestTranscription.formattedString
-
+                
                 isFinal = (result?.isFinal)!
             }
             
@@ -225,17 +225,25 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
                 self.chats.append(chat2)
                 self.tableView.reloadData()
                 
-                let username = Credentials.TextToSpeechUsername
-                let password = Credentials.TextToSpeechPassword
-                let textToSpeech = TextToSpeech(username: username, password: password)
-                
-                let failure = { (error: Error) in print(error) }
-                textToSpeech.synthesize(self.texto, voice: "pt-BR_IsabelaVoice", failure: failure) { data in
-                    self.musicPlayer = try! AVAudioPlayer(data: data)
-                    self.musicPlayer.prepareToPlay()
-                    self.musicPlayer.play()
+                let chat3 = Chatbot(texto: self.texto)
+                chat3.sendChat {
+                    let username = Credentials.TextToSpeechUsername
+                    let password = Credentials.TextToSpeechPassword
+                    let textToSpeech = TextToSpeech(username: username, password: password)
+                    
+                    if chat3.resposta != nil {
+                        let text = chat3.resposta
+                        let failure = { (error: Error) in print(error) }
+                        textToSpeech.synthesize(text, voice: "pt-BR_IsabelaVoice", failure: failure) { data in
+                            self.musicPlayer = try! AVAudioPlayer(data: data)
+                            self.musicPlayer.prepareToPlay()
+                            self.musicPlayer.play()
+                            let chat4 = chat(chat: text, face: face, usuario: false)
+                            self.chats.append(chat4)
+                            self.tableView.reloadData()
+                        }
+                    }
                 }
-                
             }
         } else {
             startRecording()
@@ -244,7 +252,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
     }
     
     @IBAction func microphoneTapped(_ sender: UIButton) {
-
+        
     }
     
     
