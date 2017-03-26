@@ -237,108 +237,118 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
                 
                 if chat3.resposta != nil {
                     let text = chat3.resposta
+                    
+                    let chat4 = chat(chat: text, face: face, usuario: false)
+                    self.chats.append(chat4)
+                    self.tableView.reloadData()
+                    
                     let failure = { (error: Error) in print(error) }
                     textToSpeech.synthesize(text, voice: "pt-BR_IsabelaVoice", failure: failure) { data in
                         self.musicPlayer = try! AVAudioPlayer(data: data)
                         self.musicPlayer.prepareToPlay()
                         self.musicPlayer.play()
-                        let chat4 = chat(chat: text, face: face, usuario: false)
-                        self.chats.append(chat4)
-                        self.tableView.reloadData()
                     }
                 }
             }
         }
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        tableView?.reloadData()
+    }
+    
     @IBAction func tappedMicrophone(_ sender: Any) {
         if audioEngine.isRunning {
             audioEngine.stop()
             recognitionRequest?.endAudio()
             microphoneImg.image = UIImage(named: "microphone-off")
-            let tone = ToneAnalyzer(texto: self.texto )
-            tone.getTone {
-                var face : String = "joy"
-                
-                if tone.angerScore > tone.disgustScore {
-                    if tone.angerScore > tone.fearScore {
-                        if tone.angerScore > tone.joyScore {
-                            if tone.angerScore > tone.sadnessScore {
-                                face = "anger"
-                            }
-                        }
-                    }
-                }
-                
-                if tone.disgustScore > tone.angerScore {
-                    if tone.disgustScore > tone.fearScore {
-                        if tone.disgustScore > tone.joyScore {
-                            if tone.disgustScore > tone.sadnessScore {
-                                face = "digust"
-                            }
-                        }
-                    }
-                }
-                
-                if tone.fearScore > tone.angerScore {
-                    if tone.fearScore > tone.disgustScore {
-                        if tone.fearScore > tone.joyScore {
-                            if tone.fearScore > tone.sadnessScore {
-                                face = "fear"
-                            }
-                        }
-                    }
-                }
-                
-                if tone.joyScore > tone.angerScore {
-                    if tone.joyScore > tone.disgustScore {
-                        if tone.joyScore > tone.fearScore {
-                            if tone.joyScore > tone.sadnessScore {
-                                face = "joy"
-                            }
-                        }
-                    }
-                }
-                
-                if tone.sadnessScore > tone.angerScore {
-                    if tone.sadnessScore > tone.disgustScore {
-                        if tone.sadnessScore > tone.fearScore {
-                            if tone.sadnessScore > tone.joyScore {
-                                face = "sadness"
-                            }
-                        }
-                    }
-                }
-                
-                let currentDate = Date()
-                let since1970 = currentDate.timeIntervalSince1970
-                let data =  Int(since1970 * 1000)
-                let mongo = MongoDB(chat: "Olá tudo bem", chatDate: Double(data), anger: tone.angerScore, disgust: tone.disgustScore, fear: tone.fearScore, sandness: tone.sadnessScore, joy: tone.joyScore)
-                mongo.postData {
-                    print("dados")
-                }
-                
-                let chat2 = chat(chat: self.texto, face: face, usuario: true)
-                self.chats.append(chat2)
-                self.tableView.reloadData()
-                
-                let chat3 = Chatbot(texto: self.texto)
-                chat3.sendChat {
-                    let username = Credentials.TextToSpeechUsername
-                    let password = Credentials.TextToSpeechPassword
-                    let textToSpeech = TextToSpeech(username: username, password: password)
+            if (self.texto as? String) != nil {
+                let tone = ToneAnalyzer(texto: self.texto )
+                tone.getTone {
+                    var face : String = "joy"
                     
-                    if chat3.resposta != nil {
-                        let text = chat3.resposta
-                        let failure = { (error: Error) in print(error) }
-                        textToSpeech.synthesize(text, voice: "pt-BR_IsabelaVoice", failure: failure) { data in
-                            self.musicPlayer = try! AVAudioPlayer(data: data)
-                            self.musicPlayer.prepareToPlay()
-                            self.musicPlayer.play()
+                    if tone.angerScore > tone.disgustScore {
+                        if tone.angerScore > tone.fearScore {
+                            if tone.angerScore > tone.joyScore {
+                                if tone.angerScore > tone.sadnessScore {
+                                    face = "anger"
+                                }
+                            }
+                        }
+                    }
+                    
+                    if tone.disgustScore > tone.angerScore {
+                        if tone.disgustScore > tone.fearScore {
+                            if tone.disgustScore > tone.joyScore {
+                                if tone.disgustScore > tone.sadnessScore {
+                                    face = "digust"
+                                }
+                            }
+                        }
+                    }
+                    
+                    if tone.fearScore > tone.angerScore {
+                        if tone.fearScore > tone.disgustScore {
+                            if tone.fearScore > tone.joyScore {
+                                if tone.fearScore > tone.sadnessScore {
+                                    face = "fear"
+                                }
+                            }
+                        }
+                    }
+                    
+                    if tone.joyScore > tone.angerScore {
+                        if tone.joyScore > tone.disgustScore {
+                            if tone.joyScore > tone.fearScore {
+                                if tone.joyScore > tone.sadnessScore {
+                                    face = "joy"
+                                }
+                            }
+                        }
+                    }
+                    
+                    if tone.sadnessScore > tone.angerScore {
+                        if tone.sadnessScore > tone.disgustScore {
+                            if tone.sadnessScore > tone.fearScore {
+                                if tone.sadnessScore > tone.joyScore {
+                                    face = "sadness"
+                                }
+                            }
+                        }
+                    }
+                    
+                    let currentDate = Date()
+                    let since1970 = currentDate.timeIntervalSince1970
+                    let data =  Int(since1970 * 1000)
+                    let mongo = MongoDB(chat: self.texto, chatDate: Double(data), anger: tone.angerScore, disgust: tone.disgustScore, fear: tone.fearScore, sandness: tone.sadnessScore, joy: tone.joyScore)
+                    mongo.postData {
+                        print("dados")
+                    }
+                    
+                    let chat2 = chat(chat: self.texto, face: face, usuario: true)
+                    self.chats.append(chat2)
+                    self.tableView.reloadData()
+                    
+                    let chat3 = Chatbot(texto: self.texto)
+                    chat3.sendChat {
+                        let username = Credentials.TextToSpeechUsername
+                        let password = Credentials.TextToSpeechPassword
+                        let textToSpeech = TextToSpeech(username: username, password: password)
+                        
+                        if chat3.resposta != nil {
+                            let text = chat3.resposta
+                            
                             let chat4 = chat(chat: text, face: face, usuario: false)
                             self.chats.append(chat4)
                             self.tableView.reloadData()
+                            
+                            let failure = { (error: Error) in print(error) }
+                            textToSpeech.synthesize(text, voice: "pt-BR_IsabelaVoice", failure: failure) { data in
+                                self.musicPlayer = try! AVAudioPlayer(data: data)
+                                self.musicPlayer.prepareToPlay()
+                                self.musicPlayer.play()
+
+                            }
                         }
                     }
                 }
