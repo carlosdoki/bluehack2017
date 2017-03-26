@@ -7,128 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0144C8D6F1859BCE437AF2B55C33E3E1 /* MongoConnection+Diagnostics.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AB90D3230B5D174A4B4D15568C2A782 /* MongoConnection+Diagnostics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0417B5DF879F03F4FABEC93AFEE76AEE /* Pods-BlueHack2017-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C3A958D41C1ECF17B8C7D974607DD4 /* Pods-BlueHack2017-dummy.m */; };
-		04769E5015CC52AF199B25A1E00E097A /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = E198D5CB19768784470256954EA1D299 /* md5.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F9EF78C697CACA20C48E835DBD789 /* Timeline.swift */; };
-		11F0ABC6A0EE5232DF9860E7505A4A00 /* MongoPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0EE1ED0CC81443D824DB53626F674E /* MongoPredicate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		125B7C2CA98B965E9FC79E628BBB56C0 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D796AFCA648D0E50F29389C53AF0A6F3 /* OrderedDictionary.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		14C98B6E53F5E14BC2E217863FC756DE /* bcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F093E164BF5129AF4C1B271EA6DCE10 /* bcon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A41A23C6F57EA921C7240F8C0215B31 /* MongoConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 27881CD70F8F43FBCE8112FF09CB07CC /* MongoConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C58FE631BB63177E5E455A27EA327CCA /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		208FB576DFA64A50F8C615230229F71D /* BSON_PrivateInterfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = 96DF67525E76E96CE873738F60545875 /* BSON_PrivateInterfaces.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		25791BF6F2861FE8FB140FA50291022B /* MongoWriteConcern.m in Sources */ = {isa = PBXBuildFile; fileRef = B643BFD3F1BDC220D2EC6C19FA2CEAC9 /* MongoWriteConcern.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2A2A160B604CB64AD70147F9DE23E9D2 /* bson.h in Headers */ = {isa = PBXBuildFile; fileRef = DACDBC32BF81577CB74110BDBB19240D /* bson.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B88DF895FCBCBA08A9562B19492F01B /* MongoCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB30A8BA1074E5C737BA37D4DF5387 /* MongoCursor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2C3B491CFCBFDAAC78E61E67A7FF6F7A /* numbers.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D5CB13C56DF33A22A4E39051753EC34 /* numbers.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2D542193A2CBFEA6615FCF439CDF0995 /* ObjCMongoDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A46F315C9FAA8E52045652D2F4EA7AE /* ObjCMongoDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30B94D94841A6405D16FE0027D4199CB /* bcon.c in Sources */ = {isa = PBXBuildFile; fileRef = C92CC351CA61A02F7BE18E40582EC10C /* bcon.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3169B6CBD79BC26A44816F8E828B857A /* BSON_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F58032E4B810A313C27432FF6B5F84A8 /* BSON_Helper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3202A040457E74F2614E093B997A69EF /* mongo_c_driver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3167981744E865088BCF6BAC23F2CB11 /* mongo_c_driver.framework */; };
-		34118AA4C81C370EC4F04399AB29675D /* BSONDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = FF72B25EB83ED9AD84754D3D58C801DE /* BSONDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3971B7F1CAC1368D1A50401D37B82FAB /* TaskDelegate.swift */; };
-		37C982FDD1154C029D3E95C23DA198E9 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = FE921F260193DCDC718FEB77F3994713 /* encoding.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		37CC5313446C9E0148D718CFE6CAFE2F /* mongo.c in Sources */ = {isa = PBXBuildFile; fileRef = FFA8FC2ACE58631E8B776603912B3374 /* mongo.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		409CB0175522C0605E0E9BBE5058B78C /* MongoUpdateRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F860F6027B746A57149BC6F0D79D11D9 /* MongoUpdateRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		456F41C5210A8A0780A0B5D37952291F /* MongoConnection+Diagnostics.m in Sources */ = {isa = PBXBuildFile; fileRef = 664610D2B87394FA7B60112F62BF147B /* MongoConnection+Diagnostics.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4584BDCE18F984F8AA7C3949FD23F442 /* mongo.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5246894F704416100CB449E07AAF00 /* mongo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		487C7F13141919D542FEB95054EAE1DF /* NSData+BSONAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FB74E21F3EF20B23AA7A6C73BF827FEE /* NSData+BSONAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		492898E2AF11C6E3939728AB73DB0C6D /* NSArray+MongoAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9766F917AA0B23F5F2106A66CBDAF75 /* NSArray+MongoAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4A6AA4C29BE54578B04632791A662339 /* MongoTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = CA574D13F5333CA2E4484A9D32973BBD /* MongoTypes.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4C12346DAB9E627BB4B998778AF8C606 /* bson.c in Sources */ = {isa = PBXBuildFile; fileRef = D6FF397A3D04B961C5B10FB3F1429F95 /* bson.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4E4998C58B4673D5E6760202D9385305 /* NSDictionary+BSONAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CE1D9B138660573D10025845804FEB8 /* NSDictionary+BSONAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F04AFCB2F5148BA2BA1C86797822740 /* NSString+BSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEBE138E8B09CDE1973D8B48E750ED5 /* NSString+BSONAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4F5DD924116B034005144F7B8F036885 /* MongoConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9B6AC765DD31E87824B61D0AA8AE4E /* MongoConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		50B4E98AB809A68D3A8DBBF7577A2D1E /* NSArray+MongoAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1313B48499A2D66F482307269BBE091F /* NSArray+MongoAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE3675F192BA13A7B4130C239D4912C /* Request.swift */; };
-		561731BE47668A718F035617DBD0BAB3 /* MongoFindRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E16F035DD49031820D62B4864F320C5B /* MongoFindRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5EDDD247C6E225E1F1601555BA364FE1 /* env.h in Headers */ = {isa = PBXBuildFile; fileRef = 7709953C33ECDFF327F5E8072C295419 /* env.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EE9D1355E97386F4D9A7F6110C3548F /* BSONIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 49C35FC53ECF93FF87381BB31D68ADCB /* BSONIterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19EA09EEB56FEDC4B95B6CD9D49422 /* DispatchQueue+Alamofire.swift */; };
-		61C6F2AB3D8CDEE80F7D1FE591427CBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7D5B2165772B7B71E8D3FBAFA42ADA /* Foundation.framework */; };
-		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72BBB65D36E64D87604B81E25EBBB90 /* ServerTrustPolicy.swift */; };
-		6806201EC9BDBEC6598F75E7043E9566 /* BSONEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7038DE96D81DE10109B624A8B670A7C5 /* BSONEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A3B98F667E2F3A7039E165A44B76FBE /* BSONTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 057A636A784DDECAF29D3240AA6A36C5 /* BSONTypes.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6D5F0D956705877D1395C81E78271DC1 /* ObjCMongoDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191AACA7BD88B534BDC90253813DE66 /* ObjCMongoDB-dummy.m */; };
-		6D844536867301F530A2C9FC8451E6BB /* BSONDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C5C792FC6F84F6980B6D9E1AE818B3 /* BSONDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		709423764B86EF4E940CB55097030CEB /* NSData+BSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1E17F6E7A81297C7C0D0F0E762B724 /* NSData+BSONAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		70BF13E8627DC5FF7C847636194E831C /* Mongo_Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4928FF9180F52AD8989BECC740482A34 /* Mongo_Helper.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF68D81DCF564608F4F350533937D2 /* SessionDelegate.swift */; };
-		7B74C9EF75CD03BAA8D632E0D03063E2 /* MongoPredicate.h in Headers */ = {isa = PBXBuildFile; fileRef = F2960FA765D3E599FBC07CBC3C49CEB8 /* MongoPredicate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366D687457FE6B73728514B12575FC83 /* Result.swift */; };
-		7DE45B7E3B47BC8D90B8D59DEE62BAF3 /* MongoTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = FD94FDA5A19D2C9BA536BFAE285889EE /* MongoTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7FA01376F5C8EA92923715AF6DF7EB14 /* ObjCBSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 346B0579E74F9CD2592B00A46A7620BD /* ObjCBSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		871568DDC15A87A63091A4C331BDAC7F /* mongo-c-driver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 487D25F90AFE8FE0A5B7EDAAA276A896 /* mongo-c-driver-dummy.m */; };
-		89E7033806784A9188A564E43E53FEE8 /* MongoFindRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2C838B3C430B435605D13B2E96F342 /* MongoFindRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D0F8E665D9CAE71D5641B56E9A09E1A /* MongoCursor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A50E7F6107BFED07E4C3E6C4DCEEDF5 /* MongoCursor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9665B3C892B4882DB569313F35D6916A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7D5B2165772B7B71E8D3FBAFA42ADA /* Foundation.framework */; };
-		986415BE8FD757B5B047503DCF47B43B /* mongo-c-driver-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF703F1A023A0BB39C20EBD9DFDE533 /* mongo-c-driver-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		989AB696EBC05F50A8F24841F3309078 /* Mongo_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 73877866960460081594E0781CF96423 /* Mongo_Helper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC80AFFE656ADCE7110399FD9B3B9DC /* AFError.swift */; };
-		9F28C61EBFEB799966F6BA6FC925E63B /* Mongo_PrivateInterfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2CD138C72157E25E3C2FD92F4E096D /* Mongo_PrivateInterfaces.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7D5B2165772B7B71E8D3FBAFA42ADA /* Foundation.framework */; };
-		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70FA9A109388EFD99C892D0BDC0A2AC /* NetworkReachabilityManager.swift */; };
-		A49F8535A92F69F8B242FAE3FF1543C6 /* MongoKeyedPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BDDF3E3F5EE9C966EAB7F344E0A749 /* MongoKeyedPredicate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 453AAEC36250125B1102D1B5417FA753 /* Alamofire-dummy.m */; };
-		AABBB9D71CC3616A795B0C0BA4C36E21 /* NSString+BSONAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AF30728E199EA22B9956B4934B5ADE03 /* NSString+BSONAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA1F4D5399E0689E0AE5F8EF42A1F29 /* SessionManager.swift */; };
-		B166EA6E13C7A067306519EB0387AA14 /* BSONDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 534437DD187DA6BDC81FEE8D903C957A /* BSONDecoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B20FD5B46BEAED7EDAADAC73B8CD9F08 /* env.c in Sources */ = {isa = PBXBuildFile; fileRef = 1696D1EEBC0D84EF67CDCC2137E035F4 /* env.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B247000BF1D7370B057A19C883300ACD /* NSDictionary+BSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03627A09B78248168FCEAB844A31880A /* NSDictionary+BSONAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B309B29E518B98FEB2F4F5F67AFB47F /* MultipartFormData.swift */; };
-		B802EC7B14D5817EF1E6E14C86C3EB3C /* Pods-BlueHack2017-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11E6F8C4EADE17B03AD06CCF4FE42D72 /* Pods-BlueHack2017-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB6C6CCC7F2047C5CEC84846FC08E979 /* gridfs.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B4E8C756821FE5C03A27556D618084D /* gridfs.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735541AFFC1CDEDAEA4833439901F213 /* Validation.swift */; };
-		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C33FD1D0E5A369811C971F35F9EA5 /* ParameterEncoding.swift */; };
-		BE6D5D654E5326A932EFB56EC2F419D2 /* BSONDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E953DDEBA8131A9E8037428C6C30437 /* BSONDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3A5A878BDA1B2B8B2EA0BEA1C6974B8 /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 76424110B8ACBAA2C8EC195972C90131 /* encoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D936A30D02D3B4DFA908720B5F26444 /* Response.swift */; };
-		CFDA393183D342143639C259B20101F3 /* MongoWriteConcern.h in Headers */ = {isa = PBXBuildFile; fileRef = C0DBEF7B34130F15A3BB43120583BB4A /* MongoWriteConcern.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D031A1EB244198436C638BA58807F3B5 /* gridfs.h in Headers */ = {isa = PBXBuildFile; fileRef = F17173A0D3F7329F53C878B21FC3AF8B /* gridfs.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D03CFBA7D251C074F3FAB2FBFEFFB763 /* BSONCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A7CC785CF30FBE6136A620956A977CE5 /* BSONCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2F78F5E1AD20EA2749614B0ACF4A5C4 /* NSManagedObject+BSONCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E5720301622F63CF91730E9048441 /* NSManagedObject+BSONCoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D3A2902712C5B99770FF575586995D95 /* BSONIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = B07EB76E65E02293299EA03B9E1F646E /* BSONIterator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D80C4F078B85BDF86DEC834C6CA29E70 /* BSONTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C1CA0187335F7BD9BEB46C7FA69593A /* BSONTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8361F6EA81A1D579652FF72F1FB9D7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7D5B2165772B7B71E8D3FBAFA42ADA /* Foundation.framework */; };
-		D92096583EA1525E5680F8EC3A319E7D /* MongoKeyedPredicate.h in Headers */ = {isa = PBXBuildFile; fileRef = C66FF52FDA256C22F1A18D710AE4286D /* MongoKeyedPredicate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E04CD1A0149FC2EC1EC3922979EFF06E /* ObjCBSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF3D9AC65A731C6734C74F2D1FD4685 /* ObjCBSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2FB2A3A0AFD214A736FF895200B600C /* BSON_Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB06FEE4F3BDCF0550E756B1E708B6D /* BSON_Helper.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		E55D4E073C8160801A33D0B80FB77121 /* ObjCMongoDB.h in Headers */ = {isa = PBXBuildFile; fileRef = CCFBC409C327EE2380266205C92756B1 /* ObjCMongoDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E66A489F5A302C2D4A13D9F23057AE4C /* MongoUpdateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 314F51362775B0C219EE6C248AB7F35A /* MongoUpdateRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEACF3CFCA6CC109C02066A62B299CA /* Notifications.swift */; };
-		F20F9F21D076408201460A2E1D879CD1 /* MongoDBCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 393BFF87591E9C8201A392861935E957 /* MongoDBCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6476029DD89D4B51D2B6046F296BBEA /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE4F374A1F04D20ECC4A45804D4C80D /* md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A34F7FD0E119543D521F2A62F710CA /* ResponseSerialization.swift */; };
-		F896E19C906B02083AEEC9D47010B5A7 /* NSManagedObject+BSONCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = F63C00A63EBAB4F4FD515283F7DA8D0B /* NSManagedObject+BSONCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53DF0B0AA4340D0C6D7D27042F9AD85 /* Alamofire.swift */; };
-		FA2B4F2D0A17CB7120F6FE29B62F1BE1 /* BSONEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D037BF1FE394B14B51525B45EBD7A32 /* BSONEncoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FC54433BD4CE83B7F36FF8173620F874 /* OrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B5FA8AF20DA9075C43BA50E10568A8 /* OrderedDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFAB61C4D340B75B063C829522B414E8 /* MongoDBCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654D4D5F1F4805BD7504C6671D95B25 /* MongoDBCollection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B44A27EFBB0DA84D738057B77F3413B1 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01C037B4034EDA3D7955BC5E4E9D9D6 /* TaskDelegate.swift */; };
+		4665C47280101AF468FE205F48AE3B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		51A701966D198D7A1EA6AFD66329CC21 /* Pods-BlueHack2017-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C3A958D41C1ECF17B8C7D974607DD4 /* Pods-BlueHack2017-dummy.m */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E230A0448B394DE26E688DAC8E6201E /* Request.swift */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBF1EED873F61C6D46CE37FA5C39D3 /* DispatchQueue+Alamofire.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B030D27CAC730C5EB0F22390645310 /* ServerTrustPolicy.swift */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D73DD9EF275A3C56569E2B1CA8026 /* SessionDelegate.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60BC9955B4F7FFA62D7440CB385C11 /* Result.swift */; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */; };
+		A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1C119BCE81C53F76CAC2BE27C38E0 /* Alamofire-dummy.m */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDAC6C1187C5467E576980E1062C8B /* SessionManager.swift */; };
+		B3C75C47076E1C74411536A6E2383E98 /* Pods-BlueHack2017-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11E6F8C4EADE17B03AD06CCF4FE42D72 /* Pods-BlueHack2017-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155538D91ACEEEDF82069ACF6C1A02E7 /* MultipartFormData.swift */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639346628280A0D0FAD35196BF56108 /* ParameterEncoding.swift */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F47F5C9CDB035C5AFADEBA5BF44F1C /* Response.swift */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A46F517F0AF7E85A16D723F6406896 /* Notifications.swift */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9510473F6FFD7AA66524DB16C2263 /* ResponseSerialization.swift */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCB8C44DE758E906C0BCDA455937B85 /* Alamofire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		391B465BD40355A630CCFA363314C9C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C5826235E0CD27FFB2E6581BBCFD03C;
-			remoteInfo = ObjCMongoDB;
-		};
-		4F93ADFBFB90E2E135BC109402C2BB34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 11E3BE698F283C1D45FB6163410FE423;
-			remoteInfo = "mongo-c-driver";
-		};
-		5C0E4E9AB1A63F28C1B9DEA574A8249D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 11E3BE698F283C1D45FB6163410FE423;
-			remoteInfo = "mongo-c-driver";
-		};
-		FA6A00FF7E3D65C624CFB43BBA872613 /* PBXContainerItemProxy */ = {
+		FCF31DD927866246426CF0BA1D216173 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -139,141 +44,50 @@
 
 /* Begin PBXFileReference section */
 		0246B49311AD759FEE98EFA547EF74E6 /* Pods-BlueHack2017-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlueHack2017-acknowledgements.markdown"; sourceTree = "<group>"; };
-		03627A09B78248168FCEAB844A31880A /* NSDictionary+BSONAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+BSONAdditions.m"; path = "BSON/NSDictionary+BSONAdditions.m"; sourceTree = "<group>"; };
-		057A636A784DDECAF29D3240AA6A36C5 /* BSONTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSONTypes.m; path = BSON/BSONTypes.m; sourceTree = "<group>"; };
-		0C2C838B3C430B435605D13B2E96F342 /* MongoFindRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoFindRequest.h; path = Mongo/MongoFindRequest.h; sourceTree = "<group>"; };
-		0EA1F4D5399E0689E0AE5F8EF42A1F29 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		04F47F5C9CDB035C5AFADEBA5BF44F1C /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		0FCBF1EED873F61C6D46CE37FA5C39D3 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		10F53E8663909C8066F01A1000C4E4D0 /* Pods-BlueHack2017.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BlueHack2017.modulemap"; sourceTree = "<group>"; };
 		11E6F8C4EADE17B03AD06CCF4FE42D72 /* Pods-BlueHack2017-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlueHack2017-umbrella.h"; sourceTree = "<group>"; };
-		1313B48499A2D66F482307269BBE091F /* NSArray+MongoAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MongoAdditions.h"; path = "Mongo/NSArray+MongoAdditions.h"; sourceTree = "<group>"; };
-		1696D1EEBC0D84EF67CDCC2137E035F4 /* env.c */ = {isa = PBXFileReference; includeInIndex = 1; name = env.c; path = src/env.c; sourceTree = "<group>"; };
-		1A46F315C9FAA8E52045652D2F4EA7AE /* ObjCMongoDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjCMongoDB-umbrella.h"; sourceTree = "<group>"; };
-		1AF3D9AC65A731C6734C74F2D1FD4685 /* ObjCBSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjCBSON.h; path = BSON/ObjCBSON.h; sourceTree = "<group>"; };
-		1B7DAE6531264936F06497CD63982B12 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CE1D9B138660573D10025845804FEB8 /* NSDictionary+BSONAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+BSONAdditions.h"; path = "BSON/NSDictionary+BSONAdditions.h"; sourceTree = "<group>"; };
-		1D5CB13C56DF33A22A4E39051753EC34 /* numbers.c */ = {isa = PBXFileReference; includeInIndex = 1; name = numbers.c; path = src/numbers.c; sourceTree = "<group>"; };
-		2247DE4F69ABABAF8BD77534A006B15F /* mongo_c_driver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = mongo_c_driver.framework; path = "mongo-c-driver.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		27881CD70F8F43FBCE8112FF09CB07CC /* MongoConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoConnection.h; path = Mongo/MongoConnection.h; sourceTree = "<group>"; };
-		2A50E7F6107BFED07E4C3E6C4DCEEDF5 /* MongoCursor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoCursor.h; path = Mongo/MongoCursor.h; sourceTree = "<group>"; };
-		2CF703F1A023A0BB39C20EBD9DFDE533 /* mongo-c-driver-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mongo-c-driver-umbrella.h"; sourceTree = "<group>"; };
-		2D7D5B2165772B7B71E8D3FBAFA42ADA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		2D936A30D02D3B4DFA908720B5F26444 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		2F093E164BF5129AF4C1B271EA6DCE10 /* bcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bcon.h; path = src/bcon.h; sourceTree = "<group>"; };
-		301682BF191E321497CF161BB066AD13 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		314F51362775B0C219EE6C248AB7F35A /* MongoUpdateRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoUpdateRequest.m; path = Mongo/MongoUpdateRequest.m; sourceTree = "<group>"; };
-		3167981744E865088BCF6BAC23F2CB11 /* mongo_c_driver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mongo_c_driver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A0A663B36A229C69D5274A83E93F88 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		155538D91ACEEEDF82069ACF6C1A02E7 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		195D73DD9EF275A3C56569E2B1CA8026 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		1E230A0448B394DE26E688DAC8E6201E /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		1F6908D9216A384555E33D98903F80B3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C1C119BCE81C53F76CAC2BE27C38E0 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		32B030D27CAC730C5EB0F22390645310 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		32BF2767531526EA8B7D9E549E456CCB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		346B0579E74F9CD2592B00A46A7620BD /* ObjCBSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ObjCBSON.m; path = BSON/ObjCBSON.m; sourceTree = "<group>"; };
-		3654D4D5F1F4805BD7504C6671D95B25 /* MongoDBCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoDBCollection.m; path = Mongo/MongoDBCollection.m; sourceTree = "<group>"; };
-		366D687457FE6B73728514B12575FC83 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		393BFF87591E9C8201A392861935E957 /* MongoDBCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoDBCollection.h; path = Mongo/MongoDBCollection.h; sourceTree = "<group>"; };
-		3971B7F1CAC1368D1A50401D37B82FAB /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		3CB06FEE4F3BDCF0550E756B1E708B6D /* BSON_Helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSON_Helper.h; path = BSON/BSON_Helper.h; sourceTree = "<group>"; };
-		3CD8DD02788B067AD00030E47A11ECF9 /* mongo-c-driver.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "mongo-c-driver.xcconfig"; sourceTree = "<group>"; };
-		3FCB30A8BA1074E5C737BA37D4DF5387 /* MongoCursor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoCursor.m; path = Mongo/MongoCursor.m; sourceTree = "<group>"; };
-		445C33FD1D0E5A369811C971F35F9EA5 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		453AAEC36250125B1102D1B5417FA753 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		487D25F90AFE8FE0A5B7EDAAA276A896 /* mongo-c-driver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "mongo-c-driver-dummy.m"; sourceTree = "<group>"; };
-		4928FF9180F52AD8989BECC740482A34 /* Mongo_Helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Mongo_Helper.h; path = Mongo/Mongo_Helper.h; sourceTree = "<group>"; };
-		49C35FC53ECF93FF87381BB31D68ADCB /* BSONIterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSONIterator.h; path = BSON/BSONIterator.h; sourceTree = "<group>"; };
-		4A9B6AC765DD31E87824B61D0AA8AE4E /* MongoConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoConnection.m; path = Mongo/MongoConnection.m; sourceTree = "<group>"; };
-		534437DD187DA6BDC81FEE8D903C957A /* BSONDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSONDecoder.m; path = BSON/BSONDecoder.m; sourceTree = "<group>"; };
-		5B4E8C756821FE5C03A27556D618084D /* gridfs.c */ = {isa = PBXFileReference; includeInIndex = 1; name = gridfs.c; path = src/gridfs.c; sourceTree = "<group>"; };
-		5CEBE138E8B09CDE1973D8B48E750ED5 /* NSString+BSONAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+BSONAdditions.m"; path = "BSON/NSString+BSONAdditions.m"; sourceTree = "<group>"; };
+		3D60BC9955B4F7FFA62D7440CB385C11 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		46CDAC6C1187C5467E576980E1062C8B /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		60D67663BFD3663CDE7F47D1717641DD /* Pods-BlueHack2017-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueHack2017-acknowledgements.plist"; sourceTree = "<group>"; };
-		66057A15CF7DF03812B25273B88B463B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		664610D2B87394FA7B60112F62BF147B /* MongoConnection+Diagnostics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MongoConnection+Diagnostics.m"; path = "Mongo/MongoConnection+Diagnostics.m"; sourceTree = "<group>"; };
-		6AB90D3230B5D174A4B4D15568C2A782 /* MongoConnection+Diagnostics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MongoConnection+Diagnostics.h"; path = "Mongo/MongoConnection+Diagnostics.h"; sourceTree = "<group>"; };
-		6B309B29E518B98FEB2F4F5F67AFB47F /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		6B8C76163CDF9B44B1E005B674870C49 /* Pods_BlueHack2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BlueHack2017.framework; path = "Pods-BlueHack2017.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C1CA0187335F7BD9BEB46C7FA69593A /* BSONTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSONTypes.h; path = BSON/BSONTypes.h; sourceTree = "<group>"; };
-		6E953DDEBA8131A9E8037428C6C30437 /* BSONDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSONDecoder.h; path = BSON/BSONDecoder.h; sourceTree = "<group>"; };
-		7038DE96D81DE10109B624A8B670A7C5 /* BSONEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSONEncoder.h; path = BSON/BSONEncoder.h; sourceTree = "<group>"; };
-		735541AFFC1CDEDAEA4833439901F213 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		7374CD0B5BFA85A6E592C4B17BBA874C /* ObjCMongoDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ObjCMongoDB.modulemap; sourceTree = "<group>"; };
-		73877866960460081594E0781CF96423 /* Mongo_Helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Mongo_Helper.m; path = Mongo/Mongo_Helper.m; sourceTree = "<group>"; };
-		76424110B8ACBAA2C8EC195972C90131 /* encoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = encoding.h; path = src/encoding.h; sourceTree = "<group>"; };
-		7709953C33ECDFF327F5E8072C295419 /* env.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = env.h; path = src/env.h; sourceTree = "<group>"; };
-		7DE3675F192BA13A7B4130C239D4912C /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		80A1F1847C6ED14032F8367D72259DF0 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		6639346628280A0D0FAD35196BF56108 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		66A46F517F0AF7E85A16D723F6406896 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		7D141D1953E5C6E67E362CE73090E48A /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		85C3A958D41C1ECF17B8C7D974607DD4 /* Pods-BlueHack2017-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlueHack2017-dummy.m"; sourceTree = "<group>"; };
-		8BE4F374A1F04D20ECC4A45804D4C80D /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = src/md5.h; sourceTree = "<group>"; };
-		8FC80AFFE656ADCE7110399FD9B3B9DC /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		8FEACF3CFCA6CC109C02066A62B299CA /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		9191AACA7BD88B534BDC90253813DE66 /* ObjCMongoDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjCMongoDB-dummy.m"; sourceTree = "<group>"; };
+		87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93B5FA8AF20DA9075C43BA50E10568A8 /* OrderedDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OrderedDictionary.h; path = OrderedDictionary/OrderedDictionary.h; sourceTree = "<group>"; };
-		96DF67525E76E96CE873738F60545875 /* BSON_PrivateInterfaces.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSON_PrivateInterfaces.h; path = BSON/BSON_PrivateInterfaces.h; sourceTree = "<group>"; };
-		9D037BF1FE394B14B51525B45EBD7A32 /* BSONEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSONEncoder.m; path = BSON/BSONEncoder.m; sourceTree = "<group>"; };
-		A1C5C792FC6F84F6980B6D9E1AE818B3 /* BSONDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSONDocument.m; path = BSON/BSONDocument.m; sourceTree = "<group>"; };
-		A72BBB65D36E64D87604B81E25EBBB90 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		A7CC785CF30FBE6136A620956A977CE5 /* BSONCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSONCoding.h; path = BSON/BSONCoding.h; sourceTree = "<group>"; };
-		AA10501ABF77440930FE87C1BD264DE2 /* mongo-c-driver.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "mongo-c-driver.modulemap"; sourceTree = "<group>"; };
-		AB5246894F704416100CB449E07AAF00 /* mongo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mongo.h; path = src/mongo.h; sourceTree = "<group>"; };
-		AC327262AF527C09CA57610F860A4838 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF30728E199EA22B9956B4934B5ADE03 /* NSString+BSONAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+BSONAdditions.h"; path = "BSON/NSString+BSONAdditions.h"; sourceTree = "<group>"; };
-		B07EB76E65E02293299EA03B9E1F646E /* BSONIterator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSONIterator.m; path = BSON/BSONIterator.m; sourceTree = "<group>"; };
-		B643BFD3F1BDC220D2EC6C19FA2CEAC9 /* MongoWriteConcern.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoWriteConcern.m; path = Mongo/MongoWriteConcern.m; sourceTree = "<group>"; };
-		BE2CD138C72157E25E3C2FD92F4E096D /* Mongo_PrivateInterfaces.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Mongo_PrivateInterfaces.h; path = Mongo/Mongo_PrivateInterfaces.h; sourceTree = "<group>"; };
-		C0DBEF7B34130F15A3BB43120583BB4A /* MongoWriteConcern.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoWriteConcern.h; path = Mongo/MongoWriteConcern.h; sourceTree = "<group>"; };
-		C0E52AD80FFFEC0998F94AA27837D72E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4FF68D81DCF564608F4F350533937D2 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		C58FE631BB63177E5E455A27EA327CCA /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		C66FF52FDA256C22F1A18D710AE4286D /* MongoKeyedPredicate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoKeyedPredicate.h; path = Mongo/MongoKeyedPredicate.h; sourceTree = "<group>"; };
+		A01C037B4034EDA3D7955BC5E4E9D9D6 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		B44A27EFBB0DA84D738057B77F3413B1 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		BCCA9CA7D9C1A2047BB93336C5708DFD /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		C86119F85F23C9648F503880BE47708B /* Pods-BlueHack2017-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueHack2017-resources.sh"; sourceTree = "<group>"; };
-		C87F9EF78C697CACA20C48E835DBD789 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		C92CC351CA61A02F7BE18E40582EC10C /* bcon.c */ = {isa = PBXFileReference; includeInIndex = 1; name = bcon.c; path = src/bcon.c; sourceTree = "<group>"; };
-		CA574D13F5333CA2E4484A9D32973BBD /* MongoTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoTypes.m; path = Mongo/MongoTypes.m; sourceTree = "<group>"; };
-		CCFBC409C327EE2380266205C92756B1 /* ObjCMongoDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjCMongoDB.h; path = Mongo/ObjCMongoDB.h; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CD9F49B03EE211E34FE1B06C9464372F /* Pods-BlueHack2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueHack2017.debug.xcconfig"; sourceTree = "<group>"; };
-		CF7F3FA2290524E7F25171F2B40733CB /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		D1BDDF3E3F5EE9C966EAB7F344E0A749 /* MongoKeyedPredicate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoKeyedPredicate.m; path = Mongo/MongoKeyedPredicate.m; sourceTree = "<group>"; };
-		D3A34F7FD0E119543D521F2A62F710CA /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		D6FF397A3D04B961C5B10FB3F1429F95 /* bson.c */ = {isa = PBXFileReference; includeInIndex = 1; name = bson.c; path = src/bson.c; sourceTree = "<group>"; };
-		D796AFCA648D0E50F29389C53AF0A6F3 /* OrderedDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OrderedDictionary.m; path = OrderedDictionary/OrderedDictionary.m; sourceTree = "<group>"; };
-		DA19EA09EEB56FEDC4B95B6CD9D49422 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		DACDBC32BF81577CB74110BDBB19240D /* bson.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bson.h; path = src/bson.h; sourceTree = "<group>"; };
-		E16F035DD49031820D62B4864F320C5B /* MongoFindRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoFindRequest.m; path = Mongo/MongoFindRequest.m; sourceTree = "<group>"; };
-		E198D5CB19768784470256954EA1D299 /* md5.c */ = {isa = PBXFileReference; includeInIndex = 1; name = md5.c; path = src/md5.c; sourceTree = "<group>"; };
-		E354598872BD2D77228E8BDFF06538CF /* ObjCMongoDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjCMongoDB.framework; path = ObjCMongoDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4D8A00BED4539E4BA6E8E5414104209 /* ObjCMongoDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjCMongoDB-prefix.pch"; sourceTree = "<group>"; };
+		D7DE446E3E0120BC38BD90971125430B /* Pods_BlueHack2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BlueHack2017.framework; path = "Pods-BlueHack2017.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFCB8C44DE758E906C0BCDA455937B85 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		E2F9510473F6FFD7AA66524DB16C2263 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		E6F34CCF86067ED508C12C676E298C69 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		E6F54E3C38CC163408B66BF8A26AF24F /* Pods-BlueHack2017-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueHack2017-frameworks.sh"; sourceTree = "<group>"; };
-		E9766F917AA0B23F5F2106A66CBDAF75 /* NSArray+MongoAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MongoAdditions.m"; path = "Mongo/NSArray+MongoAdditions.m"; sourceTree = "<group>"; };
-		EA0EE1ED0CC81443D824DB53626F674E /* MongoPredicate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoPredicate.m; path = Mongo/MongoPredicate.m; sourceTree = "<group>"; };
 		EA7C3A696FFDA54193FF6035CE483B8F /* Pods-BlueHack2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueHack2017.release.xcconfig"; sourceTree = "<group>"; };
-		F17173A0D3F7329F53C878B21FC3AF8B /* gridfs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gridfs.h; path = src/gridfs.h; sourceTree = "<group>"; };
-		F2960FA765D3E599FBC07CBC3C49CEB8 /* MongoPredicate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoPredicate.h; path = Mongo/MongoPredicate.h; sourceTree = "<group>"; };
-		F2A592AC21EEE81B4F3721F537C919D8 /* mongo-c-driver-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mongo-c-driver-prefix.pch"; sourceTree = "<group>"; };
-		F3547AAB660A8FE1468FA7780DDFD5F2 /* ObjCMongoDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjCMongoDB.xcconfig; sourceTree = "<group>"; };
-		F53DF0B0AA4340D0C6D7D27042F9AD85 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		F58032E4B810A313C27432FF6B5F84A8 /* BSON_Helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSON_Helper.m; path = BSON/BSON_Helper.m; sourceTree = "<group>"; };
-		F63C00A63EBAB4F4FD515283F7DA8D0B /* NSManagedObject+BSONCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+BSONCoding.h"; path = "BSON/NSManagedObject+BSONCoding.h"; sourceTree = "<group>"; };
-		F70FA9A109388EFD99C892D0BDC0A2AC /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		F860F6027B746A57149BC6F0D79D11D9 /* MongoUpdateRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoUpdateRequest.h; path = Mongo/MongoUpdateRequest.h; sourceTree = "<group>"; };
-		FB74E21F3EF20B23AA7A6C73BF827FEE /* NSData+BSONAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+BSONAdditions.h"; path = "BSON/NSData+BSONAdditions.h"; sourceTree = "<group>"; };
-		FD1E17F6E7A81297C7C0D0F0E762B724 /* NSData+BSONAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+BSONAdditions.m"; path = "BSON/NSData+BSONAdditions.m"; sourceTree = "<group>"; };
-		FD94FDA5A19D2C9BA536BFAE285889EE /* MongoTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoTypes.h; path = Mongo/MongoTypes.h; sourceTree = "<group>"; };
-		FE3E5720301622F63CF91730E9048441 /* NSManagedObject+BSONCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+BSONCoding.m"; path = "BSON/NSManagedObject+BSONCoding.m"; sourceTree = "<group>"; };
-		FE921F260193DCDC718FEB77F3994713 /* encoding.c */ = {isa = PBXFileReference; includeInIndex = 1; name = encoding.c; path = src/encoding.c; sourceTree = "<group>"; };
-		FF72B25EB83ED9AD84754D3D58C801DE /* BSONDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSONDocument.h; path = BSON/BSONDocument.h; sourceTree = "<group>"; };
-		FFA8FC2ACE58631E8B776603912B3374 /* mongo.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mongo.c; path = src/mongo.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		493DBEC0C5D937F8C73D4999B2C0C6BD /* Frameworks */ = {
+		7C940571BCEC1D8EFA4DBAA94C2D3F60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8361F6EA81A1D579652FF72F1FB9D7A /* Foundation.framework in Frameworks */,
-				3202A040457E74F2614E093B997A69EF /* mongo_c_driver.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		96414FB999150000717F68794C2BAE9E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9665B3C892B4882DB569313F35D6916A /* Foundation.framework in Frameworks */,
+				4665C47280101AF468FE205F48AE3B5E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,80 +99,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4A1B5AAAD2D58E0CECB4781687A3192 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				61C6F2AB3D8CDEE80F7D1FE591427CBC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D0CABACD780D840499D018E24B5B832 /* iOS */ = {
+		200D10EB20F0397D47F022B50CF0433F /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				2D7D5B2165772B7B71E8D3FBAFA42ADA /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		133D43113F4210BE7690DA183EA6DD6F /* BSON */ = {
-			isa = PBXGroup;
-			children = (
-				3CB06FEE4F3BDCF0550E756B1E708B6D /* BSON_Helper.h */,
-				F58032E4B810A313C27432FF6B5F84A8 /* BSON_Helper.m */,
-				96DF67525E76E96CE873738F60545875 /* BSON_PrivateInterfaces.h */,
-				A7CC785CF30FBE6136A620956A977CE5 /* BSONCoding.h */,
-				6E953DDEBA8131A9E8037428C6C30437 /* BSONDecoder.h */,
-				534437DD187DA6BDC81FEE8D903C957A /* BSONDecoder.m */,
-				FF72B25EB83ED9AD84754D3D58C801DE /* BSONDocument.h */,
-				A1C5C792FC6F84F6980B6D9E1AE818B3 /* BSONDocument.m */,
-				7038DE96D81DE10109B624A8B670A7C5 /* BSONEncoder.h */,
-				9D037BF1FE394B14B51525B45EBD7A32 /* BSONEncoder.m */,
-				49C35FC53ECF93FF87381BB31D68ADCB /* BSONIterator.h */,
-				B07EB76E65E02293299EA03B9E1F646E /* BSONIterator.m */,
-				6C1CA0187335F7BD9BEB46C7FA69593A /* BSONTypes.h */,
-				057A636A784DDECAF29D3240AA6A36C5 /* BSONTypes.m */,
-				FB74E21F3EF20B23AA7A6C73BF827FEE /* NSData+BSONAdditions.h */,
-				FD1E17F6E7A81297C7C0D0F0E762B724 /* NSData+BSONAdditions.m */,
-				1CE1D9B138660573D10025845804FEB8 /* NSDictionary+BSONAdditions.h */,
-				03627A09B78248168FCEAB844A31880A /* NSDictionary+BSONAdditions.m */,
-				F63C00A63EBAB4F4FD515283F7DA8D0B /* NSManagedObject+BSONCoding.h */,
-				FE3E5720301622F63CF91730E9048441 /* NSManagedObject+BSONCoding.m */,
-				AF30728E199EA22B9956B4934B5ADE03 /* NSString+BSONAdditions.h */,
-				5CEBE138E8B09CDE1973D8B48E750ED5 /* NSString+BSONAdditions.m */,
-				1AF3D9AC65A731C6734C74F2D1FD4685 /* ObjCBSON.h */,
-				346B0579E74F9CD2592B00A46A7620BD /* ObjCBSON.m */,
-			);
-			name = BSON;
-			sourceTree = "<group>";
-		};
-		279EAD8464E3D19A2C832F0036DDE12A /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				8FC80AFFE656ADCE7110399FD9B3B9DC /* AFError.swift */,
-				F53DF0B0AA4340D0C6D7D27042F9AD85 /* Alamofire.swift */,
-				DA19EA09EEB56FEDC4B95B6CD9D49422 /* DispatchQueue+Alamofire.swift */,
-				6B309B29E518B98FEB2F4F5F67AFB47F /* MultipartFormData.swift */,
-				F70FA9A109388EFD99C892D0BDC0A2AC /* NetworkReachabilityManager.swift */,
-				8FEACF3CFCA6CC109C02066A62B299CA /* Notifications.swift */,
-				445C33FD1D0E5A369811C971F35F9EA5 /* ParameterEncoding.swift */,
-				7DE3675F192BA13A7B4130C239D4912C /* Request.swift */,
-				2D936A30D02D3B4DFA908720B5F26444 /* Response.swift */,
-				D3A34F7FD0E119543D521F2A62F710CA /* ResponseSerialization.swift */,
-				366D687457FE6B73728514B12575FC83 /* Result.swift */,
-				A72BBB65D36E64D87604B81E25EBBB90 /* ServerTrustPolicy.swift */,
-				C4FF68D81DCF564608F4F350533937D2 /* SessionDelegate.swift */,
-				0EA1F4D5399E0689E0AE5F8EF42A1F29 /* SessionManager.swift */,
-				3971B7F1CAC1368D1A50401D37B82FAB /* TaskDelegate.swift */,
-				C87F9EF78C697CACA20C48E835DBD789 /* Timeline.swift */,
-				735541AFFC1CDEDAEA4833439901F213 /* Validation.swift */,
-				3C04A4350BEE19232F47BE26761C1C45 /* Support Files */,
+				4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */,
+				DFCB8C44DE758E906C0BCDA455937B85 /* Alamofire.swift */,
+				0FCBF1EED873F61C6D46CE37FA5C39D3 /* DispatchQueue+Alamofire.swift */,
+				155538D91ACEEEDF82069ACF6C1A02E7 /* MultipartFormData.swift */,
+				E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */,
+				66A46F517F0AF7E85A16D723F6406896 /* Notifications.swift */,
+				6639346628280A0D0FAD35196BF56108 /* ParameterEncoding.swift */,
+				1E230A0448B394DE26E688DAC8E6201E /* Request.swift */,
+				04F47F5C9CDB035C5AFADEBA5BF44F1C /* Response.swift */,
+				E2F9510473F6FFD7AA66524DB16C2263 /* ResponseSerialization.swift */,
+				3D60BC9955B4F7FFA62D7440CB385C11 /* Result.swift */,
+				32B030D27CAC730C5EB0F22390645310 /* ServerTrustPolicy.swift */,
+				195D73DD9EF275A3C56569E2B1CA8026 /* SessionDelegate.swift */,
+				46CDAC6C1187C5467E576980E1062C8B /* SessionManager.swift */,
+				A01C037B4034EDA3D7955BC5E4E9D9D6 /* TaskDelegate.swift */,
+				87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */,
+				B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */,
+				55F14F994FE7AB51F028BFE66CEF3106 /* Support Files */,
 			);
 			name = Alamofire;
 			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		35F128EB69B6F7FB7DA93BBF6C130FAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				200D10EB20F0397D47F022B50CF0433F /* Alamofire */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		3BD725CDF2E92DCAB895A3A15629CA98 /* Targets Support Files */ = {
@@ -369,165 +144,54 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3C04A4350BEE19232F47BE26761C1C45 /* Support Files */ = {
+		55F14F994FE7AB51F028BFE66CEF3106 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CF7F3FA2290524E7F25171F2B40733CB /* Alamofire.modulemap */,
-				301682BF191E321497CF161BB066AD13 /* Alamofire.xcconfig */,
-				453AAEC36250125B1102D1B5417FA753 /* Alamofire-dummy.m */,
-				80A1F1847C6ED14032F8367D72259DF0 /* Alamofire-prefix.pch */,
-				C58FE631BB63177E5E455A27EA327CCA /* Alamofire-umbrella.h */,
-				66057A15CF7DF03812B25273B88B463B /* Info.plist */,
+				7D141D1953E5C6E67E362CE73090E48A /* Alamofire.modulemap */,
+				E6F34CCF86067ED508C12C676E298C69 /* Alamofire.xcconfig */,
+				22C1C119BCE81C53F76CAC2BE27C38E0 /* Alamofire-dummy.m */,
+				BCCA9CA7D9C1A2047BB93336C5708DFD /* Alamofire-prefix.pch */,
+				B44A27EFBB0DA84D738057B77F3413B1 /* Alamofire-umbrella.h */,
+				13A0A663B36A229C69D5274A83E93F88 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
-		4BF7FFC8B3753EC2326A5954C3BCF33F /* Support Files */ = {
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				AC327262AF527C09CA57610F860A4838 /* Info.plist */,
-				AA10501ABF77440930FE87C1BD264DE2 /* mongo-c-driver.modulemap */,
-				3CD8DD02788B067AD00030E47A11ECF9 /* mongo-c-driver.xcconfig */,
-				487D25F90AFE8FE0A5B7EDAAA276A896 /* mongo-c-driver-dummy.m */,
-				F2A592AC21EEE81B4F3721F537C919D8 /* mongo-c-driver-prefix.pch */,
-				2CF703F1A023A0BB39C20EBD9DFDE533 /* mongo-c-driver-umbrella.h */,
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/mongo-c-driver";
-			sourceTree = "<group>";
-		};
-		695B17226AB37BBCF1CBF577550F5D90 /* mongo-c-driver */ = {
-			isa = PBXGroup;
-			children = (
-				C92CC351CA61A02F7BE18E40582EC10C /* bcon.c */,
-				2F093E164BF5129AF4C1B271EA6DCE10 /* bcon.h */,
-				D6FF397A3D04B961C5B10FB3F1429F95 /* bson.c */,
-				DACDBC32BF81577CB74110BDBB19240D /* bson.h */,
-				FE921F260193DCDC718FEB77F3994713 /* encoding.c */,
-				76424110B8ACBAA2C8EC195972C90131 /* encoding.h */,
-				1696D1EEBC0D84EF67CDCC2137E035F4 /* env.c */,
-				7709953C33ECDFF327F5E8072C295419 /* env.h */,
-				5B4E8C756821FE5C03A27556D618084D /* gridfs.c */,
-				F17173A0D3F7329F53C878B21FC3AF8B /* gridfs.h */,
-				E198D5CB19768784470256954EA1D299 /* md5.c */,
-				8BE4F374A1F04D20ECC4A45804D4C80D /* md5.h */,
-				FFA8FC2ACE58631E8B776603912B3374 /* mongo.c */,
-				AB5246894F704416100CB449E07AAF00 /* mongo.h */,
-				1D5CB13C56DF33A22A4E39051753EC34 /* numbers.c */,
-				4BF7FFC8B3753EC2326A5954C3BCF33F /* Support Files */,
-			);
-			name = "mongo-c-driver";
-			path = "mongo-c-driver";
-			sourceTree = "<group>";
-		};
-		7470A8FC8039089EBB5737B5478C633C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				279EAD8464E3D19A2C832F0036DDE12A /* Alamofire */,
-				695B17226AB37BBCF1CBF577550F5D90 /* mongo-c-driver */,
-				B5D90D70CD928D7F52295410B5D6307C /* ObjCMongoDB */,
-			);
-			name = Pods;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				ED14B9D5EC8C580E83E70B599A8E155F /* Frameworks */,
-				7470A8FC8039089EBB5737B5478C633C /* Pods */,
-				829BB852047D7F5BB5239D6DF518D168 /* Products */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				35F128EB69B6F7FB7DA93BBF6C130FAE /* Pods */,
+				8EDFBC55DCDAF79CA959D44E410C6972 /* Products */,
 				3BD725CDF2E92DCAB895A3A15629CA98 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		829BB852047D7F5BB5239D6DF518D168 /* Products */ = {
+		8EDFBC55DCDAF79CA959D44E410C6972 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0E52AD80FFFEC0998F94AA27837D72E /* Alamofire.framework */,
-				2247DE4F69ABABAF8BD77534A006B15F /* mongo_c_driver.framework */,
-				E354598872BD2D77228E8BDFF06538CF /* ObjCMongoDB.framework */,
-				6B8C76163CDF9B44B1E005B674870C49 /* Pods_BlueHack2017.framework */,
+				1F6908D9216A384555E33D98903F80B3 /* Alamofire.framework */,
+				D7DE446E3E0120BC38BD90971125430B /* Pods_BlueHack2017.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B5D90D70CD928D7F52295410B5D6307C /* ObjCMongoDB */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				133D43113F4210BE7690DA183EA6DD6F /* BSON */,
-				F27D924BFC5B87B49EF635C64A0A8DBE /* Mongo */,
-				E711072F75ECC8F837B546B76819D181 /* OrderedDictionary */,
-				CC9FEF0AEFE7FD1950F37F6A8B4DA970 /* Support Files */,
-			);
-			name = ObjCMongoDB;
-			path = ObjCMongoDB;
-			sourceTree = "<group>";
-		};
-		CC9FEF0AEFE7FD1950F37F6A8B4DA970 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1B7DAE6531264936F06497CD63982B12 /* Info.plist */,
-				7374CD0B5BFA85A6E592C4B17BBA874C /* ObjCMongoDB.modulemap */,
-				F3547AAB660A8FE1468FA7780DDFD5F2 /* ObjCMongoDB.xcconfig */,
-				9191AACA7BD88B534BDC90253813DE66 /* ObjCMongoDB-dummy.m */,
-				E4D8A00BED4539E4BA6E8E5414104209 /* ObjCMongoDB-prefix.pch */,
-				1A46F315C9FAA8E52045652D2F4EA7AE /* ObjCMongoDB-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ObjCMongoDB";
-			sourceTree = "<group>";
-		};
-		E711072F75ECC8F837B546B76819D181 /* OrderedDictionary */ = {
-			isa = PBXGroup;
-			children = (
-				93B5FA8AF20DA9075C43BA50E10568A8 /* OrderedDictionary.h */,
-				D796AFCA648D0E50F29389C53AF0A6F3 /* OrderedDictionary.m */,
-			);
-			name = OrderedDictionary;
-			sourceTree = "<group>";
-		};
-		ED14B9D5EC8C580E83E70B599A8E155F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3167981744E865088BCF6BAC23F2CB11 /* mongo_c_driver.framework */,
-				0D0CABACD780D840499D018E24B5B832 /* iOS */,
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F27D924BFC5B87B49EF635C64A0A8DBE /* Mongo */ = {
-			isa = PBXGroup;
-			children = (
-				4928FF9180F52AD8989BECC740482A34 /* Mongo_Helper.h */,
-				73877866960460081594E0781CF96423 /* Mongo_Helper.m */,
-				BE2CD138C72157E25E3C2FD92F4E096D /* Mongo_PrivateInterfaces.h */,
-				27881CD70F8F43FBCE8112FF09CB07CC /* MongoConnection.h */,
-				4A9B6AC765DD31E87824B61D0AA8AE4E /* MongoConnection.m */,
-				6AB90D3230B5D174A4B4D15568C2A782 /* MongoConnection+Diagnostics.h */,
-				664610D2B87394FA7B60112F62BF147B /* MongoConnection+Diagnostics.m */,
-				2A50E7F6107BFED07E4C3E6C4DCEEDF5 /* MongoCursor.h */,
-				3FCB30A8BA1074E5C737BA37D4DF5387 /* MongoCursor.m */,
-				393BFF87591E9C8201A392861935E957 /* MongoDBCollection.h */,
-				3654D4D5F1F4805BD7504C6671D95B25 /* MongoDBCollection.m */,
-				0C2C838B3C430B435605D13B2E96F342 /* MongoFindRequest.h */,
-				E16F035DD49031820D62B4864F320C5B /* MongoFindRequest.m */,
-				C66FF52FDA256C22F1A18D710AE4286D /* MongoKeyedPredicate.h */,
-				D1BDDF3E3F5EE9C966EAB7F344E0A749 /* MongoKeyedPredicate.m */,
-				F2960FA765D3E599FBC07CBC3C49CEB8 /* MongoPredicate.h */,
-				EA0EE1ED0CC81443D824DB53626F674E /* MongoPredicate.m */,
-				FD94FDA5A19D2C9BA536BFAE285889EE /* MongoTypes.h */,
-				CA574D13F5333CA2E4484A9D32973BBD /* MongoTypes.m */,
-				F860F6027B746A57149BC6F0D79D11D9 /* MongoUpdateRequest.h */,
-				314F51362775B0C219EE6C248AB7F35A /* MongoUpdateRequest.m */,
-				C0DBEF7B34130F15A3BB43120583BB4A /* MongoWriteConcern.h */,
-				B643BFD3F1BDC220D2EC6C19FA2CEAC9 /* MongoWriteConcern.m */,
-				1313B48499A2D66F482307269BBE091F /* NSArray+MongoAdditions.h */,
-				E9766F917AA0B23F5F2106A66CBDAF75 /* NSArray+MongoAdditions.m */,
-				CCFBC409C327EE2380266205C92756B1 /* ObjCMongoDB.h */,
-			);
-			name = Mongo;
 			sourceTree = "<group>";
 		};
 		F5D33419758FADC9E6D317EA944A918E /* Pods-BlueHack2017 */ = {
@@ -551,18 +215,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		17D56053F8ACBAD7CE6EAED82124FC31 /* Headers */ = {
+		46B011050240FC8EEAA7CA2DACC850F2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C98B6E53F5E14BC2E217863FC756DE /* bcon.h in Headers */,
-				2A2A160B604CB64AD70147F9DE23E9D2 /* bson.h in Headers */,
-				C3A5A878BDA1B2B8B2EA0BEA1C6974B8 /* encoding.h in Headers */,
-				5EDDD247C6E225E1F1601555BA364FE1 /* env.h in Headers */,
-				D031A1EB244198436C638BA58807F3B5 /* gridfs.h in Headers */,
-				F6476029DD89D4B51D2B6046F296BBEA /* md5.h in Headers */,
-				986415BE8FD757B5B047503DCF47B43B /* mongo-c-driver-umbrella.h in Headers */,
-				4584BDCE18F984F8AA7C3949FD23F442 /* mongo.h in Headers */,
+				B3C75C47076E1C74411536A6E2383E98 /* Pods-BlueHack2017-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,88 +231,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D666BFC554528EE66BC77837E81CB352 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E2FB2A3A0AFD214A736FF895200B600C /* BSON_Helper.h in Headers */,
-				208FB576DFA64A50F8C615230229F71D /* BSON_PrivateInterfaces.h in Headers */,
-				D03CFBA7D251C074F3FAB2FBFEFFB763 /* BSONCoding.h in Headers */,
-				BE6D5D654E5326A932EFB56EC2F419D2 /* BSONDecoder.h in Headers */,
-				34118AA4C81C370EC4F04399AB29675D /* BSONDocument.h in Headers */,
-				6806201EC9BDBEC6598F75E7043E9566 /* BSONEncoder.h in Headers */,
-				5EE9D1355E97386F4D9A7F6110C3548F /* BSONIterator.h in Headers */,
-				D80C4F078B85BDF86DEC834C6CA29E70 /* BSONTypes.h in Headers */,
-				70BF13E8627DC5FF7C847636194E831C /* Mongo_Helper.h in Headers */,
-				9F28C61EBFEB799966F6BA6FC925E63B /* Mongo_PrivateInterfaces.h in Headers */,
-				0144C8D6F1859BCE437AF2B55C33E3E1 /* MongoConnection+Diagnostics.h in Headers */,
-				1A41A23C6F57EA921C7240F8C0215B31 /* MongoConnection.h in Headers */,
-				8D0F8E665D9CAE71D5641B56E9A09E1A /* MongoCursor.h in Headers */,
-				F20F9F21D076408201460A2E1D879CD1 /* MongoDBCollection.h in Headers */,
-				89E7033806784A9188A564E43E53FEE8 /* MongoFindRequest.h in Headers */,
-				D92096583EA1525E5680F8EC3A319E7D /* MongoKeyedPredicate.h in Headers */,
-				7B74C9EF75CD03BAA8D632E0D03063E2 /* MongoPredicate.h in Headers */,
-				7DE45B7E3B47BC8D90B8D59DEE62BAF3 /* MongoTypes.h in Headers */,
-				409CB0175522C0605E0E9BBE5058B78C /* MongoUpdateRequest.h in Headers */,
-				CFDA393183D342143639C259B20101F3 /* MongoWriteConcern.h in Headers */,
-				50B4E98AB809A68D3A8DBBF7577A2D1E /* NSArray+MongoAdditions.h in Headers */,
-				487C7F13141919D542FEB95054EAE1DF /* NSData+BSONAdditions.h in Headers */,
-				4E4998C58B4673D5E6760202D9385305 /* NSDictionary+BSONAdditions.h in Headers */,
-				F896E19C906B02083AEEC9D47010B5A7 /* NSManagedObject+BSONCoding.h in Headers */,
-				AABBB9D71CC3616A795B0C0BA4C36E21 /* NSString+BSONAdditions.h in Headers */,
-				E04CD1A0149FC2EC1EC3922979EFF06E /* ObjCBSON.h in Headers */,
-				2D542193A2CBFEA6615FCF439CDF0995 /* ObjCMongoDB-umbrella.h in Headers */,
-				E55D4E073C8160801A33D0B80FB77121 /* ObjCMongoDB.h in Headers */,
-				FC54433BD4CE83B7F36FF8173620F874 /* OrderedDictionary.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EEF183CF844E0B88A1B2FD37E3582113 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B802EC7B14D5817EF1E6E14C86C3EB3C /* Pods-BlueHack2017-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		11E3BE698F283C1D45FB6163410FE423 /* mongo-c-driver */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F60F75F4ACE5344551F8C693006674D3 /* Build configuration list for PBXNativeTarget "mongo-c-driver" */;
-			buildPhases = (
-				D03302AC23E0591122475A5D0AE84E9A /* Sources */,
-				B4A1B5AAAD2D58E0CECB4781687A3192 /* Frameworks */,
-				17D56053F8ACBAD7CE6EAED82124FC31 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "mongo-c-driver";
-			productName = "mongo-c-driver";
-			productReference = 2247DE4F69ABABAF8BD77534A006B15F /* mongo_c_driver.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		1C5826235E0CD27FFB2E6581BBCFD03C /* ObjCMongoDB */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3F7C3D7E8F70A6A9972C0EA15E7FCAF2 /* Build configuration list for PBXNativeTarget "ObjCMongoDB" */;
-			buildPhases = (
-				25728F7DBFCAD131CB4B1CAFAE1A36EC /* Sources */,
-				493DBEC0C5D937F8C73D4999B2C0C6BD /* Frameworks */,
-				D666BFC554528EE66BC77837E81CB352 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				076E4936B0A57533380C62DE77314CD4 /* PBXTargetDependency */,
-			);
-			name = ObjCMongoDB;
-			productName = ObjCMongoDB;
-			productReference = E354598872BD2D77228E8BDFF06538CF /* ObjCMongoDB.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */;
@@ -670,27 +248,25 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = C0E52AD80FFFEC0998F94AA27837D72E /* Alamofire.framework */;
+			productReference = 1F6908D9216A384555E33D98903F80B3 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C1F8F2F3EDE16926DD0D834320A1C60D /* Pods-BlueHack2017 */ = {
+		9CA0830E05B366E6DFC25EB8742BAA68 /* Pods-BlueHack2017 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E497A80C08176A828D365803A72D592 /* Build configuration list for PBXNativeTarget "Pods-BlueHack2017" */;
+			buildConfigurationList = 379F35F428C6904271BC207DA41FE793 /* Build configuration list for PBXNativeTarget "Pods-BlueHack2017" */;
 			buildPhases = (
-				4FB1BBB57692AD8E42C8D0903F9146EE /* Sources */,
-				96414FB999150000717F68794C2BAE9E /* Frameworks */,
-				EEF183CF844E0B88A1B2FD37E3582113 /* Headers */,
+				99C4666D4D97DFBCE56219E33706FC09 /* Sources */,
+				7C940571BCEC1D8EFA4DBAA94C2D3F60 /* Frameworks */,
+				46B011050240FC8EEAA7CA2DACC850F2 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2A0A811C1F350102E8209DDAC7A99F0E /* PBXTargetDependency */,
-				70097305D75598ABA694B0B110A9745B /* PBXTargetDependency */,
-				A23D575CEA8345EEB1CC06C3F7DC71DF /* PBXTargetDependency */,
+				62C145A5840F7D74A9A010F7F1F2F243 /* PBXTargetDependency */,
 			);
 			name = "Pods-BlueHack2017";
 			productName = "Pods-BlueHack2017";
-			productReference = 6B8C76163CDF9B44B1E005B674870C49 /* Pods_BlueHack2017.framework */;
+			productReference = D7DE446E3E0120BC38BD90971125430B /* Pods_BlueHack2017.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -710,51 +286,17 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 829BB852047D7F5BB5239D6DF518D168 /* Products */;
+			productRefGroup = 8EDFBC55DCDAF79CA959D44E410C6972 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
-				11E3BE698F283C1D45FB6163410FE423 /* mongo-c-driver */,
-				1C5826235E0CD27FFB2E6581BBCFD03C /* ObjCMongoDB */,
-				C1F8F2F3EDE16926DD0D834320A1C60D /* Pods-BlueHack2017 */,
+				9CA0830E05B366E6DFC25EB8742BAA68 /* Pods-BlueHack2017 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		25728F7DBFCAD131CB4B1CAFAE1A36EC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3169B6CBD79BC26A44816F8E828B857A /* BSON_Helper.m in Sources */,
-				B166EA6E13C7A067306519EB0387AA14 /* BSONDecoder.m in Sources */,
-				6D844536867301F530A2C9FC8451E6BB /* BSONDocument.m in Sources */,
-				FA2B4F2D0A17CB7120F6FE29B62F1BE1 /* BSONEncoder.m in Sources */,
-				D3A2902712C5B99770FF575586995D95 /* BSONIterator.m in Sources */,
-				6A3B98F667E2F3A7039E165A44B76FBE /* BSONTypes.m in Sources */,
-				989AB696EBC05F50A8F24841F3309078 /* Mongo_Helper.m in Sources */,
-				456F41C5210A8A0780A0B5D37952291F /* MongoConnection+Diagnostics.m in Sources */,
-				4F5DD924116B034005144F7B8F036885 /* MongoConnection.m in Sources */,
-				2B88DF895FCBCBA08A9562B19492F01B /* MongoCursor.m in Sources */,
-				FFAB61C4D340B75B063C829522B414E8 /* MongoDBCollection.m in Sources */,
-				561731BE47668A718F035617DBD0BAB3 /* MongoFindRequest.m in Sources */,
-				A49F8535A92F69F8B242FAE3FF1543C6 /* MongoKeyedPredicate.m in Sources */,
-				11F0ABC6A0EE5232DF9860E7505A4A00 /* MongoPredicate.m in Sources */,
-				4A6AA4C29BE54578B04632791A662339 /* MongoTypes.m in Sources */,
-				E66A489F5A302C2D4A13D9F23057AE4C /* MongoUpdateRequest.m in Sources */,
-				25791BF6F2861FE8FB140FA50291022B /* MongoWriteConcern.m in Sources */,
-				492898E2AF11C6E3939728AB73DB0C6D /* NSArray+MongoAdditions.m in Sources */,
-				709423764B86EF4E940CB55097030CEB /* NSData+BSONAdditions.m in Sources */,
-				B247000BF1D7370B057A19C883300ACD /* NSDictionary+BSONAdditions.m in Sources */,
-				D2F78F5E1AD20EA2749614B0ACF4A5C4 /* NSManagedObject+BSONCoding.m in Sources */,
-				4F04AFCB2F5148BA2BA1C86797822740 /* NSString+BSONAdditions.m in Sources */,
-				7FA01376F5C8EA92923715AF6DF7EB14 /* ObjCBSON.m in Sources */,
-				6D5F0D956705877D1395C81E78271DC1 /* ObjCMongoDB-dummy.m in Sources */,
-				125B7C2CA98B965E9FC79E628BBB56C0 /* OrderedDictionary.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		32B9974868188C4803318E36329C87FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -780,63 +322,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4FB1BBB57692AD8E42C8D0903F9146EE /* Sources */ = {
+		99C4666D4D97DFBCE56219E33706FC09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0417B5DF879F03F4FABEC93AFEE76AEE /* Pods-BlueHack2017-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D03302AC23E0591122475A5D0AE84E9A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				30B94D94841A6405D16FE0027D4199CB /* bcon.c in Sources */,
-				4C12346DAB9E627BB4B998778AF8C606 /* bson.c in Sources */,
-				37C982FDD1154C029D3E95C23DA198E9 /* encoding.c in Sources */,
-				B20FD5B46BEAED7EDAADAC73B8CD9F08 /* env.c in Sources */,
-				BB6C6CCC7F2047C5CEC84846FC08E979 /* gridfs.c in Sources */,
-				04769E5015CC52AF199B25A1E00E097A /* md5.c in Sources */,
-				871568DDC15A87A63091A4C331BDAC7F /* mongo-c-driver-dummy.m in Sources */,
-				37CC5313446C9E0148D718CFE6CAFE2F /* mongo.c in Sources */,
-				2C3B491CFCBFDAAC78E61E67A7FF6F7A /* numbers.c in Sources */,
+				51A701966D198D7A1EA6AFD66329CC21 /* Pods-BlueHack2017-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		076E4936B0A57533380C62DE77314CD4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "mongo-c-driver";
-			target = 11E3BE698F283C1D45FB6163410FE423 /* mongo-c-driver */;
-			targetProxy = 4F93ADFBFB90E2E135BC109402C2BB34 /* PBXContainerItemProxy */;
-		};
-		2A0A811C1F350102E8209DDAC7A99F0E /* PBXTargetDependency */ = {
+		62C145A5840F7D74A9A010F7F1F2F243 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = FA6A00FF7E3D65C624CFB43BBA872613 /* PBXContainerItemProxy */;
-		};
-		70097305D75598ABA694B0B110A9745B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ObjCMongoDB;
-			target = 1C5826235E0CD27FFB2E6581BBCFD03C /* ObjCMongoDB */;
-			targetProxy = 391B465BD40355A630CCFA363314C9C2 /* PBXContainerItemProxy */;
-		};
-		A23D575CEA8345EEB1CC06C3F7DC71DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "mongo-c-driver";
-			target = 11E3BE698F283C1D45FB6163410FE423 /* mongo-c-driver */;
-			targetProxy = 5C0E4E9AB1A63F28C1B9DEA574A8249D /* PBXContainerItemProxy */;
+			targetProxy = FCF31DD927866246426CF0BA1D216173 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0A29B6F510198AF64EFD762EF6FA97A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 301682BF191E321497CF161BB066AD13 /* Alamofire.xcconfig */;
+			baseConfigurationReference = E6F34CCF86067ED508C12C676E298C69 /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -866,74 +374,7 @@
 			};
 			name = Release;
 		};
-		34DFD9DB1FD19235D64BEFDA372754AE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA7C3A696FFDA54193FF6035CE483B8F /* Pods-BlueHack2017.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BlueHack2017/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BlueHack2017/Pods-BlueHack2017.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BlueHack2017;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3F5AB23E1A31296935C5D0DF9C89BA1C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3547AAB660A8FE1468FA7780DDFD5F2 /* ObjCMongoDB.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ObjCMongoDB/ObjCMongoDB-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ObjCMongoDB/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ObjCMongoDB/ObjCMongoDB.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ObjCMongoDB;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5F6BBEBD93342BB3C8082565FFE2248B /* Debug */ = {
+		55AFAA4814F189C548F79C6A636D267B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD9F49B03EE211E34FE1B06C9464372F /* Pods-BlueHack2017.debug.xcconfig */;
 			buildSettings = {
@@ -968,38 +409,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		6408C3597F1FF4F32AB896501D996068 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CD8DD02788B067AD00030E47A11ECF9 /* mongo-c-driver.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/mongo-c-driver/mongo-c-driver-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/mongo-c-driver/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/mongo-c-driver/mongo-c-driver.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = mongo_c_driver;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		673254EEAF0B5BF4596080C749645884 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1041,37 +450,40 @@
 			};
 			name = Release;
 		};
-		7DD9A858B06C2619323466DDD17B4C6D /* Debug */ = {
+		B512C4B38C1C0B5F51D8BDEDAE1D814A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3547AAB660A8FE1468FA7780DDFD5F2 /* ObjCMongoDB.xcconfig */;
+			baseConfigurationReference = EA7C3A696FFDA54193FF6035CE483B8F /* Pods-BlueHack2017.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ObjCMongoDB/ObjCMongoDB-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ObjCMongoDB/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueHack2017/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ObjCMongoDB/ObjCMongoDB.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ObjCMongoDB;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueHack2017/Pods-BlueHack2017.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BlueHack2017;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1117,41 +529,9 @@
 			};
 			name = Debug;
 		};
-		E88EF3E9CCFD2834FA1F2CF7AC9BD21A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CD8DD02788B067AD00030E47A11ECF9 /* mongo-c-driver.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/mongo-c-driver/mongo-c-driver-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/mongo-c-driver/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/mongo-c-driver/mongo-c-driver.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = mongo_c_driver;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		F383079BFBF927813EA3613CFB679FDE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 301682BF191E321497CF161BB066AD13 /* Alamofire.xcconfig */;
+			baseConfigurationReference = E6F34CCF86067ED508C12C676E298C69 /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1194,11 +574,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F7C3D7E8F70A6A9972C0EA15E7FCAF2 /* Build configuration list for PBXNativeTarget "ObjCMongoDB" */ = {
+		379F35F428C6904271BC207DA41FE793 /* Build configuration list for PBXNativeTarget "Pods-BlueHack2017" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7DD9A858B06C2619323466DDD17B4C6D /* Debug */,
-				3F5AB23E1A31296935C5D0DF9C89BA1C /* Release */,
+				55AFAA4814F189C548F79C6A636D267B /* Debug */,
+				B512C4B38C1C0B5F51D8BDEDAE1D814A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1208,24 +588,6 @@
 			buildConfigurations = (
 				F383079BFBF927813EA3613CFB679FDE /* Debug */,
 				0A29B6F510198AF64EFD762EF6FA97A5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4E497A80C08176A828D365803A72D592 /* Build configuration list for PBXNativeTarget "Pods-BlueHack2017" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5F6BBEBD93342BB3C8082565FFE2248B /* Debug */,
-				34DFD9DB1FD19235D64BEFDA372754AE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F60F75F4ACE5344551F8C693006674D3 /* Build configuration list for PBXNativeTarget "mongo-c-driver" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E88EF3E9CCFD2834FA1F2CF7AC9BD21A /* Debug */,
-				6408C3597F1FF4F32AB896501D996068 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

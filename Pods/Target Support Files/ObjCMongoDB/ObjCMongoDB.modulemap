@@ -1,6 +1,0 @@
-framework module ObjCMongoDB {
-  umbrella header "ObjCMongoDB-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -9,44 +9,13 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ObjCMongoDB.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-BlueHack2017.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>mongo-c-driver.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>11E3BE698F283C1D45FB6163410FE423</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1C5826235E0CD27FFB2E6581BBCFD03C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C1F8F2F3EDE16926DD0D834320A1C60D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

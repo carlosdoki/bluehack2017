@@ -22,9 +22,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
     private let audioEngine = AVAudioEngine()
     
     var toneAnalyze: ToneAnalyzer!
-    var player: AVPlayer!
     var speechUrl : URL!
-    var avPlayer = AVAudioPlayer()
     var musicPlayer: AVAudioPlayer!
     var chats = [chat]()
     var texto : String!
@@ -119,7 +117,6 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
             
             if result != nil {
                 
-                //self.textView.text = result?.bestTranscription.formattedString
                 self.texto = result?.bestTranscription.formattedString
                 
                 isFinal = (result?.isFinal)!
@@ -148,9 +145,6 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
         } catch {
             print("audioEngine couldn't start because of an error.")
         }
-        
-        //textView.text = "Say something, I'm listening!"
-        
     }
     
     func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {
