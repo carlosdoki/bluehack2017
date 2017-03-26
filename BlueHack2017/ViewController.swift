@@ -249,10 +249,9 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
                 }
             }
         }
-        
-        
     }
     
+
     @IBAction func tappedMicrophone(_ sender: Any) {
         if audioEngine.isRunning {
             audioEngine.stop()

@@ -25,9 +25,11 @@ class chatCell: UITableViewCell {
         if usuario != true {
             self.chatLbl.textAlignment = .right
             self.faceImg.image = nil
+            self.chatLbl.textColor = UIColor(red: 255, green: 0, blue: 0, alpha: 0.5)
         } else {
             self.chatLbl.textAlignment = .left
             self.faceImg.image = UIImage(named: face)
+            self.chatLbl.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
         }
     }
 }

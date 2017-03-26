@@ -30,22 +30,28 @@ public class Chatbot {
     }
     
     func sendChat (completed: @escaping DownloadComplete) {
+//        let parameters: [String: Any] = [
+//            "input" : [
+//                "text" : texto,
+//                "context" : [
+//                    "conversation_id": "1b7b67c0-90ed-45dc-8508-9488bc483d5b",
+//                    "system" : [
+//                        "dialog_stack" : [
+//                            [ "dialog_node" : "root" ]
+//                        ],
+//                        "dialog_turn_counter" : 1,
+//                        "dialog_request_counter" : 1
+//                    ]
+//                ]
+//            ]
+//        ]
+
         let parameters: [String: Any] = [
             "input" : [
                 "text" : texto,
-                "context" : [
-                    "conversation_id": "1b7b67c0-90ed-45dc-8508-9488bc483d5b",
-                    "system" : [
-                        "dialog_stack" : [
-                            [ "dialog_node" : "root" ]
-                        ],
-                        "dialog_turn_counter" : 1,
-                        "dialog_request_counter" : 1
-                    ]
-                ]
+                "context" : []
             ]
         ]
-        
         let headers = [ "Content-Type" : "application/json" ]
 
         let chatUrl = "\(URL_CONVERSATION)/\(CONVERSATION_WORKSPACE)/message?\(CONVERTION_VERSION)"
