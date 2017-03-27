@@ -11,6 +11,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "ViewController.blueBtnTapped(Any) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lueBtn.titleLabel?.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ViewController.(startRecording() -&gt; ()).(closure #1):ViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -27,6 +35,9 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "ViewController.(teste2BtnTapped(Any) -&gt; ()).(closure #2):ViewController.swift">
+      </ContextState>
+      <ContextState
          contextName = "TextSpeech.getAudio(completed : () -&gt; ()) -&gt; ():TextSpeech.swift">
          <PersistentStrings>
             <PersistentString
@@ -35,21 +46,18 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "Chatbot.(sendChat(completed : () -&gt; ()) -&gt; ()).(closure #1):ChatBot.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "text.count">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ViewController.(teste2BtnTapped(Any) -&gt; ()).(closure #2):ViewController.swift">
-      </ContextState>
-      <ContextState
          contextName = "TextSpeech.(getAudio(completed : () -&gt; ()) -&gt; ()).(closure #1):TextSpeech.swift">
          <PersistentStrings>
             <PersistentString
                value = "response.result.success">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Chatbot.(sendChat(completed : () -&gt; ()) -&gt; ()).(closure #1):ChatBot.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "text.count">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

@@ -15,6 +15,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
     @IBOutlet weak var microphoneButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var microphoneImg: UIImageView!
+    @IBOutlet weak var blueBtn: UIButton!
     
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "pt_BR"))  //1
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
@@ -95,6 +96,12 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
             try audioSession.setCategory(AVAudioSessionCategoryRecord)
             try audioSession.setMode(AVAudioSessionModeMeasurement)
             try audioSession.setActive(true, with: .notifyOthersOnDeactivation)
+            if blueBtn.currentTitle == "Bluetooth OFF" {
+                try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord, with: AVAudioSessionCategoryOptions.allowBluetooth)
+            } else {
+                try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord, with: AVAudioSessionCategoryOptions.defaultToSpeaker)
+            }
+            
         } catch {
             print("audioSession properties weren't set because of an error.")
         }
@@ -157,7 +164,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
     
     
     @IBAction func testeBtnTapped(_ sender: UIButton) {
-        let texto = "Eu quero comer chocolate"
+        let texto = "Olá"
         let tone = ToneAnalyzer(texto: texto )
         tone.getTone {
             var face : String = "joy"
@@ -236,19 +243,41 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
                 let textToSpeech = TextToSpeech(username: username, password: password)
                 
                 if chat3.resposta != nil {
-                    let text = chat3.resposta
-                    
-                    let chat4 = chat(chat: text, face: face, usuario: false)
-                    self.chats.append(chat4)
-                    self.tableView.reloadData()
-                    
-                    let failure = { (error: Error) in print(error) }
-                    textToSpeech.synthesize(text, voice: "pt-BR_IsabelaVoice", failure: failure) { data in
-                        self.musicPlayer = try! AVAudioPlayer(data: data)
-                        self.musicPlayer.prepareToPlay()
-                        self.musicPlayer.play()
+                    if chat3.resposta != "" {
+                        let text = chat3.resposta
+                        
+                        let chat4 = chat(chat: text, face: face, usuario: false)
+                        self.chats.append(chat4)
+                        self.tableView.reloadData()
+                        
+                        let failure = { (error: Error) in print(error) }
+                        textToSpeech.synthesize(text, voice: "pt-BR_IsabelaVoice", failure: failure) { data in
+                            self.musicPlayer = try! AVAudioPlayer(data: data)
+                            self.musicPlayer.prepareToPlay()
+                            self.musicPlayer.play()
+                        }
                     }
                 }
+            }
+        }
+    }
+    
+    @IBAction func blueBtnTapped(_ sender: Any) {
+        
+        let session = AVAudioSession()
+        if blueBtn.currentTitle == "Bluetooth ON" {
+            do {
+                try session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: AVAudioSessionCategoryOptions.allowBluetooth)
+                blueBtn.setTitle("Bluetooth OFF", for: .normal)
+            } catch {
+                print("AVAudioSession error!")
+            }
+        } else {
+            do {
+                try session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: AVAudioSessionCategoryOptions.defaultToSpeaker)
+                blueBtn.setTitle("Bluetooth ON", for: .normal)
+            } catch {
+                print("AVAudioSession error!")
             }
         }
     }
@@ -262,7 +291,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
             audioEngine.stop()
             recognitionRequest?.endAudio()
             microphoneImg.image = UIImage(named: "microphone-off")
-            if (self.texto as? String) != nil {
+            if self.texto != nil {
                 let tone = ToneAnalyzer(texto: self.texto )
                 tone.getTone {
                     var face : String = "joy"
@@ -336,18 +365,20 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVAudioPlaye
                         let textToSpeech = TextToSpeech(username: username, password: password)
                         
                         if chat3.resposta != nil {
-                            let text = chat3.resposta
-                            
-                            let chat4 = chat(chat: text, face: face, usuario: false)
-                            self.chats.append(chat4)
-                            self.tableView.reloadData()
-                            
-                            let failure = { (error: Error) in print(error) }
-                            textToSpeech.synthesize(text, voice: "pt-BR_IsabelaVoice", failure: failure) { data in
-                                self.musicPlayer = try! AVAudioPlayer(data: data)
-                                self.musicPlayer.prepareToPlay()
-                                self.musicPlayer.play()
-
+                            if chat3.resposta != "" {
+                                let text = chat3.resposta
+                                
+                                let chat4 = chat(chat: text, face: face, usuario: false)
+                                self.chats.append(chat4)
+                                self.tableView.reloadData()
+                                
+                                let failure = { (error: Error) in print(error) }
+                                textToSpeech.synthesize(text, voice: "pt-BR_IsabelaVoice", failure: failure) { data in
+                                    self.musicPlayer = try! AVAudioPlayer(data: data)
+                                    self.musicPlayer.prepareToPlay()
+                                    self.musicPlayer.play()
+                                    
+                                }
                             }
                         }
                     }

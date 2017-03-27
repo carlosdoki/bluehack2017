@@ -107,11 +107,20 @@
                                             <outletCollection property="gestureRecognizers" destination="8GT-JH-a8d" appends="YES" id="JCw-hj-Cwt"/>
                                         </connections>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAg-QS-hib">
+                                        <rect key="frame" x="274" y="32" width="93" height="30"/>
+                                        <state key="normal" title="Bluetooth ON"/>
+                                        <connections>
+                                            <action selector="blueBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5N-vy-q6W"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="XAg-QS-hib" secondAttribute="trailing" constant="8" id="KqO-tm-NJv"/>
                                     <constraint firstAttribute="height" constant="70" id="ODp-ee-oHf"/>
                                     <constraint firstItem="F0A-ZR-NLa" firstAttribute="centerY" secondItem="nhz-rb-f5U" secondAttribute="centerY" id="Rqj-Np-uDe"/>
+                                    <constraint firstAttribute="bottom" secondItem="XAg-QS-hib" secondAttribute="bottom" constant="8" id="ZND-Ed-yTF"/>
                                     <constraint firstItem="F0A-ZR-NLa" firstAttribute="centerX" secondItem="nhz-rb-f5U" secondAttribute="centerX" id="cXb-8x-W2S"/>
                                 </constraints>
                             </view>
@@ -131,6 +140,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueBtn" destination="XAg-QS-hib" id="KLE-N5-tXH"/>
                         <outlet property="microphoneButton" destination="KUh-Yx-kFV" id="A2N-gC-G0o"/>
                         <outlet property="microphoneImg" destination="F0A-ZR-NLa" id="OH3-6Z-Sd1"/>
                         <outlet property="tableView" destination="R1H-oc-ElJ" id="zJ6-6y-kJE"/>
