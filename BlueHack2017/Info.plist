@@ -21,7 +21,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Seu microfone será usado para gravar a voz quando você pressionar o botão "Iniciar".</string>
+	<string>Seu microfone será usado para gravar a voz quando você pressionar o botão &quot;Iniciar&quot;.</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>Reconhecimento de voz será usado para reconhecer os palavras que você fala no microfone.</string>
 	<key>UIBackgroundModes</key>
@@ -49,5 +49,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

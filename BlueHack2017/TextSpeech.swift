@@ -252,33 +252,33 @@ public class TextToSpeech {
             queryItems: queryParameters
         )
         
-        // execute REST request
-        request.responseData { response in
-            switch response.result {
-            case .success(let data):
-                switch self.dataToError(data: data) {
-                case .some(let error): failure?(error)
-                case .none:
-                    if audioFormat == .wav {
-                        // repair the WAV header
-                        var wav = data
-                        guard TextToSpeech.isWAVFile(data: wav) else {
-                            let failureReason = "Returned audio is in an unexpected format."
-                            let userInfo = [NSLocalizedFailureReasonErrorKey: failureReason]
-                            let error = NSError(domain: self.domain, code: 0, userInfo: userInfo)
-                            failure?(error)
-                            return
-                        }
-                        TextToSpeech.repairWAVHeader(data: &wav)
-                        success(wav)
-                    } else {
-                        success(data)
-                    }
-                }
-            case .failure(let error):
-                failure?(error)
-            }
-        }
+//        // execute REST request
+//        request.responseData { response in
+//            switch response.result {
+//            case .success(let data):
+//                switch self.dataToError(data: data) {
+//                case .some(let error): failure?(error)
+//                case .none:
+//                    if audioFormat == .wav {
+//                        // repair the WAV header
+//                        var wav = data
+//                        guard TextToSpeech.isWAVFile(data: wav) else {
+//                            let failureReason = "Returned audio is in an unexpected format."
+//                            let userInfo = [NSLocalizedFailureReasonErrorKey: failureReason]
+//                            let error = NSError(domain: self.domain, code: 0, userInfo: userInfo)
+//                            failure?(error)
+//                            return
+//                        }
+//                        TextToSpeech.repairWAVHeader(data: &wav)
+//                        success(wav)
+//                    } else {
+//                        success(data)
+//                    }
+//                }
+//            case .failure(let error):
+//                failure?(error)
+//            }
+//        }
     }
     
     // MARK: - Customizations
@@ -732,7 +732,7 @@ public class TextToSpeech {
      - returns: A String initialized by converting the given big-endian byte buffer into
      Unicode characters using a UTF-8 encoding.
      */
-    private static func dataToUTF8String(data: Data, offset: Int, length: Int) -> String? {
+    func dataToUTF8String(data: Data, offset: Int, length: Int) -> String? {
         let range = Range(uncheckedBounds: (lower: offset, upper: offset + length))
         let subdata = data.subdata(in: range)
         return String(data: subdata, encoding: String.Encoding.utf8)
@@ -747,7 +747,7 @@ public class TextToSpeech {
      - returns: An Int initialized by converting the given little-endian byte buffer into
      an unsigned 32-bit integer.
      */
-    private static func dataToUInt32(data: Data, offset: Int) -> Int {
+    func dataToUInt32(data: Data, offset: Int) -> Int {
         var num: UInt8 = 0
         let length = 4
         let range = Range(uncheckedBounds: (lower: offset, upper: offset + length))
@@ -767,7 +767,7 @@ public class TextToSpeech {
      
      - returns: `true` if the given data is a WAV-formatted audio file; otherwise, false.
      */
-    private static func isWAVFile(data: Data) -> Bool {
+     func isWAVFile(data: Data) -> Bool {
         
         // resources for WAV header format:
         // [1] http://unusedino.de/ec64/technical/formats/wav.html
@@ -802,7 +802,7 @@ public class TextToSpeech {
      - parameter data: The WAV-formatted audio file produced by Watson Text to Speech. The
      byte data will be analyzed and repaired in-place.
      */
-    private static func repairWAVHeader(data: inout Data) {
+     func repairWAVHeader(data: inout Data) {
         
         // resources for WAV header format:
         // [1] http://unusedino.de/ec64/technical/formats/wav.html

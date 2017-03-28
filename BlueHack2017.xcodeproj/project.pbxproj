@@ -23,6 +23,7 @@
 		BC2F07291E86B872006288B0 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F07281E86B872006288B0 /* Translation.swift */; };
 		BC2F072D1E86C6EA006288B0 /* ChatBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F072C1E86C6EA006288B0 /* ChatBot.swift */; };
 		BC2F07321E86E604006288B0 /* chatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F07311E86E604006288B0 /* chatCell.swift */; };
+		BC3DA7391E89E1FF00FDF402 /* RedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3DA7381E89E1FF00FDF402 /* RedNode.swift */; };
 		BC5D0DAD1E86E8860058CCE7 /* chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D0DAC1E86E8860058CCE7 /* chat.swift */; };
 		BC5D38161E872B7B00C3110A /* MogoDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D38151E872B7B00C3110A /* MogoDB.swift */; };
 		BC8EF1151E8544D700767B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EF1141E8544D700767B42 /* AppDelegate.swift */; };
@@ -51,6 +52,7 @@
 		BC2F07281E86B872006288B0 /* Translation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		BC2F072C1E86C6EA006288B0 /* ChatBot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBot.swift; sourceTree = "<group>"; };
 		BC2F07311E86E604006288B0 /* chatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chatCell.swift; sourceTree = "<group>"; };
+		BC3DA7381E89E1FF00FDF402 /* RedNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedNode.swift; sourceTree = "<group>"; };
 		BC5D0DAC1E86E8860058CCE7 /* chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chat.swift; sourceTree = "<group>"; };
 		BC5D38151E872B7B00C3110A /* MogoDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MogoDB.swift; sourceTree = "<group>"; };
 		BC8EF1111E8544D700767B42 /* BlueHack2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueHack2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +183,7 @@
 				BC2F070F1E86B4F4006288B0 /* TextSpeech.swift */,
 				BC2F072C1E86C6EA006288B0 /* ChatBot.swift */,
 				BC5D38151E872B7B00C3110A /* MogoDB.swift */,
+				BC3DA7381E89E1FF00FDF402 /* RedNode.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				BC2F07291E86B872006288B0 /* Translation.swift in Sources */,
 				BC2F071F1E86B725006288B0 /* PhonemeFormat.swift in Sources */,
 				BC2F071D1E86B6FF006288B0 /* AudioFormat.swift in Sources */,
+				BC3DA7391E89E1FF00FDF402 /* RedNode.swift in Sources */,
 				BC2F07101E86B4F4006288B0 /* TextSpeech.swift in Sources */,
 				BC8EF1291E854DA200767B42 /* Credentials.swift in Sources */,
 				BC8EF1151E8544D700767B42 /* AppDelegate.swift in Sources */,

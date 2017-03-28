@@ -20,6 +20,9 @@ let URL_CONVERSATION = "https://gateway.watsonplatform.net/conversation/api/v1/w
 let CONVERTION_VERSION = "version=2017-02-03"
 let CONVERSATION_WORKSPACE = "516a6e4a-fdf9-4aa7-9502-ae6e03bd0c32"
 
+let URL_REDNODE="http://appollie.mybluemix.net/ollie"
+
+
 typealias DownloadComplete = () -> ()
 
 struct Credentials {
